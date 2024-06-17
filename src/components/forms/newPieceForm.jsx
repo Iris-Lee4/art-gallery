@@ -13,8 +13,106 @@ export const NewPieceForm = ({ currentUser }) => {
                             type="text"
                             placeholder="name of piece"
                             onChange={(event) => {
-                                const artPieceCopy => { ...artPiece }
+                                const artPieceCopy = { ...artPiece }
                                 artPieceCopy.name = event.target.value
+                                setArtPiece(artPieceCopy)
+                            }}
+                        />
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <label>Artist</label>
+                        <input 
+                            type="text"
+                            placeholder="artist"
+                            onChange={(event) => {
+                                const artPieceCopy = { ...artPiece }
+                                artPieceCopy.artist = event.target.value
+                                setArtPiece(artPieceCopy)
+                            }}
+                        />
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <label>medium</label>
+                        <input 
+                            type="text"
+                            placeholder="medium"
+                            onChange={(event) => {
+                                const artPieceCopy = { ...artPiece }
+                                artPieceCopy.medium = event.target.value
+                                setArtPiece(artPieceCopy)
+                            }}
+                        />
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <label>dimensions</label>
+                        <input 
+                            type="text"
+                            placeholder="dimensions"
+                            onChange={(event) => {
+                                const artPieceCopy = { ...artPiece }
+                                artPieceCopy.dimensions = event.target.value
+                                setArtPiece(artPieceCopy)
+                            }}
+                        />
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <label>Year Completed</label>
+                        <input 
+                            type="year"
+                            placeholder="year completed"
+                            onChange={(event) => {
+                                const artPieceCopy = { ...artPiece }
+                                artPieceCopy.dateCompleted = event.target.value
+                                setArtPiece(artPieceCopy)
+                            }}
+                        />
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <label>blurb</label>
+                        <input 
+                            type="text"
+                            placeholder="blurb"
+                            onChange={(event) => {
+                                const artPieceCopy = { ...artPiece }
+                                artPieceCopy.blurb = event.target.value
+                                setArtPiece(artPieceCopy)
+                            }}
+                        />
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <label>Price</label>
+                        <input 
+                            type="number"
+                            placeholder="price in USD"
+                            onChange={(event) => {
+                                const artPieceCopy = { ...artPiece }
+                                artPieceCopy.price = event.target.value
+                                setArtPiece(artPieceCopy)
+                            }}
+                        />
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <label>Picture</label>
+                        <input 
+                            type="text"
+                            placeholder="link to picture of piece"
+                            onChange={(event) => {
+                                const artPieceCopy = { ...artPiece }
+                                artPieceCopy.url = event.target.value
                                 setArtPiece(artPieceCopy)
                             }}
                         />
