@@ -1,19 +1,28 @@
 import { useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
-import { getArtPieceById } from "../../services/artService.jsx"
-import { Card, CardBody, CardSubtitle, CardTitle, Container, ListGroup, ListGroupItem } from "reactstrap"
+import { useNavigate, useParams } from "react-router-dom"
+import { deleteArtPiece, getArtPieceById } from "../../services/artService.jsx"
+import { Button, Card, CardBody, CardSubtitle, CardTitle, Container, ListGroup, ListGroupItem } from "reactstrap"
 
-export const ArtDetail = () => {
+export const ArtDetail = ( { currentUser }) => {
 
     const [currentArtPiece, setCurrentArtPiece] = useState({})
 
     const { artPieceId } = useParams()
+
+    const navigate = useNavigate()
 
     useEffect(() => {
         getArtPieceById(artPieceId).then((data) => {
             setCurrentArtPiece(data)
         })
     }, [artPieceId])
+
+    const handleDelete = () => {
+        deleteArtPiece(currentArtPiece.id)
+            .then(() => {
+            navigate("/")
+            })
+    }
 
     return (
         <Container>
@@ -53,7 +62,24 @@ export const ArtDetail = () => {
                     {currentArtPiece.price}
                 </ListGroupItem>
             </ListGroup>
+            {/* if the logged in user is an admin & the piece has not been purchased, a button to remove the piece will display */}
+                    {currentUser?.isStaff && !currentArtPiece.dateSold ? (
+                        <Button
+                            onClick={handleDelete}
+                        >
+                            Remove Piece from Gallery
+                        </Button>
+                    ) : (
+                        ""
+                    )}
+
              </Card>    
         </Container>
     )
 }
+
+// {currentUser.isStaff && !currentArtPiece.dateSold && (
+//     <Button>
+//         Remove Piece from Gallery
+//     </Button>
+// )}

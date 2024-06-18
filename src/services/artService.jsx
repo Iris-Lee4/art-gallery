@@ -17,3 +17,9 @@ export const createNewArtPiece = (artPiece) => {
         body: JSON.stringify(artPiece)
     })
 }
+
+export const deleteArtPiece = (artPieceId) => {
+    return fetch(`http://localhost:8088/pieces/${artPieceId}`, {
+        method: "DELETE",
+    })
+}

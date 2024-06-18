@@ -3,14 +3,19 @@ import { getAllArtPieces } from "../../services/artService.jsx"
 import { Container } from "react-bootstrap"
 import { ArtPiece } from "./ArtPiece.jsx"
 
-export const ArtList = ({ artPiece }) => {
+export const ArtList = ({ currentUser }) => {
 
     const [artPieces, setArtPieces] = useState([])
 
-    useEffect(() => {
+    const getAndSetPieces = () => {
         getAllArtPieces().then(artArray => {
             setArtPieces(artArray)
         })
+    }
+
+    useEffect(() => {
+        getAndSetPieces()
+
     },[])
 
     return (
@@ -21,6 +26,7 @@ export const ArtList = ({ artPiece }) => {
                     return <ArtPiece 
                             artPiece={artPiece}
                             key={artPiece.id}
+                            currentUser={currentUser}
                         /> 
                 })}
             </article>

@@ -18,20 +18,21 @@ export const AdminViews = ({ currentUser }) => {
                     </>
                 }
             >
-                <Route index element={<ArtList />} />
-                
+                <Route index element={<ArtList currentUser={currentUser} />} />
+
                 <Route path="all">
                     <Route index
-                        element={<ArtList />} />
-                    <Route path=":artPieceId" element={<ArtDetail />} />
+                        element={<ArtList currentUser={currentUser} />} />
+                    <Route path=":artPieceId" 
+                        element={<ArtDetail currentUser={currentUser} />} />
                 </Route>
                 <Route path="sold">
                     <Route index
-                        element={<ArtSoldList />} />
+                        element={<ArtSoldList currentUser={currentUser} />} />
                 </Route>
                 <Route path="new">
                     <Route index
-                        element={<NewPieceForm />} />
+                        element={<NewPieceForm currentUser={currentUser} />} />
                 </Route>
 
                 <Route path="profile"

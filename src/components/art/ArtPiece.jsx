@@ -1,7 +1,7 @@
 import { Card, CardBody, CardSubtitle, CardTitle, ListGroup, ListGroupItem } from "react-bootstrap"
 import { useNavigate } from "react-router-dom"
 
-export const ArtPiece = ({ artPiece }) => {
+export const ArtPiece = ({ artPiece, currentUser }) => {
 
     const navigate = useNavigate()
 
@@ -28,7 +28,7 @@ export const ArtPiece = ({ artPiece }) => {
                     src={artPiece.url}
                     width="100%"
                     onClick={() => {
-                        navigate(`/all/${ artPiece.id}`)
+                        navigate(`/all/${artPiece.id}`)
                     }}
                 />
             {/* <ListGroup>
