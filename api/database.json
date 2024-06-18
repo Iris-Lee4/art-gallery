@@ -48,6 +48,20 @@
       "lastName": "Larissa",
       "isStaff": false,
       "id": 7
+    },
+    {
+      "email": "sarah@asd.com",
+      "firstName": "Sarah",
+      "lastName": "Sarah",
+      "isStaff": true,
+      "id": 8
+    },
+    {
+      "email": "sarah@sarah.com",
+      "firstName": "sarah",
+      "lastName": "sarah",
+      "isStaff": true,
+      "id": 9
     }
   ],
   "pieces": [
@@ -61,8 +75,8 @@
       "blurb": "In 1968 (the year of the assassination of Martin Luther King Jr. and the signing of the Civil Rights Act) Gilliam began staining and folding raw canvases and suspending them from the wall, creating immersive bleeds of color. For Gilliam, 'the year 1968 was one of revelation . . . something was in the air, and it was in that spirit that I did the Drape paintings.' The works/' tension and free fall—subject to forces beyond the artist/'s control—paralleled the social turmoil of the time. As a Black artist and civil rights leader, Gilliam deliberately worked against the grain. Unlike many of his peers, he refrained from literal depictions or messages in his art. He was committed to abstraction, stating, 'the expressive act of making a mark and hanging it in space is always political. My work is as political as it is formal.' Gilliam/'s titles refer to historical and artistic events alike: 10/27/69 marks the date he completed this painting, against the backdrop of mass demonstrations protesting the Vietnam War. (MoMA Gallery label 2021)",
       "price": "$1,000",
       "url": "https://www.moma.org/d/assets/W1siZiIsIjIwMjEvMDkvMTQvczhubHZ2eDQ2XzNfMjAxNF9DQ0NSX0Z1bGxfc2l6ZV9KUEVHLmpwZyJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ/3_2014_CCCR-Full%20size%20JPEG.jpg?sha=3ec577106c59ac8c",
-      "userId": "",
-      "dateSold": ""
+      "userId": "3",
+      "dateSold": "6/18/2024"
     },
     {
       "id": 2,
@@ -206,6 +220,17 @@
       "url": "https://collections.stormking.org/media/collectiveaccess/images/3/1/33884_ca_object_representations_media_3104_page.jpg",
       "userId": "",
       "dateSold": ""
+    },
+    {
+      "name": "Untitled",
+      "artist": "Toshiko Takaezu",
+      "medium": "glazed porcelain",
+      "dimensions": "40.64 x 20 cm",
+      "dateCompleted": "1980s",
+      "blurb": "Born in Hawaii to Okinawan parents, Toshiko Takaezu was a masterful artist known for her ceramic sculptures, treating them as abstract paintings in the round. Her gestural style, distinctive palettes, and complex glazes align with Abstract Expressionists. Takaezu introduced an element of chance, as final colors emerged only after firing. She often exhibited her ceramics in groups, alongside her innovative paintings and textiles, in arrangements responding to their environments. This exhibition traces her development from potter to multimedia installation artist.",
+      "price": "3500",
+      "url": "https://images.squarespace-cdn.com/content/v1/5c40c21ef8370ad59ce093a4/1557371684975-KIAJ0RSSZ4XE0J33JSOQ/xttw3%2C+private+collection%2C+1980s%2C+approx+16+x+9.jpeg?format=1000w",
+      "id": 14
     }
   ],
   "comments": [],

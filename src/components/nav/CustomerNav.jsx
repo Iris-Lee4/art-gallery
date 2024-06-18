@@ -9,7 +9,7 @@ import {
   NavLink,
 } from 'reactstrap';
 
-export const UserNav = (args) => {
+export const CustomerNav = (args) => {
 
   const [isOpen, setIsOpen] = useState(false);
 

@@ -1,9 +1,10 @@
 import { Outlet, Route, Routes } from "react-router-dom"
-import { Welcome } from "../components/welcome/Welcome.jsx"
 import { AdminNav } from "../components/nav/AdminNav.jsx"
 import { ArtList } from "../components/art/ArtList.jsx"
 import { ArtSoldList } from "../components/art/ArtSoldList.jsx"
 import { NewPieceForm } from "../components/forms/newPieceForm.jsx"
+import { UserDetails } from "../components/profile/ProfileDetails.jsx"
+import { ArtDetail } from "../components/art/ArtDetail.jsx"
 
 export const AdminViews = ({ currentUser }) => {
     return (
@@ -17,11 +18,12 @@ export const AdminViews = ({ currentUser }) => {
                     </>
                 }
             >
-                <Route index element={<Welcome />} />
-
+                <Route index element={<ArtList />} />
+                
                 <Route path="all">
                     <Route index
                         element={<ArtList />} />
+                    <Route path=":artPieceId" element={<ArtDetail />} />
                 </Route>
                 <Route path="sold">
                     <Route index
@@ -31,6 +33,9 @@ export const AdminViews = ({ currentUser }) => {
                     <Route index
                         element={<NewPieceForm />} />
                 </Route>
+
+                <Route path="profile"
+                    element={<UserDetails currentUser={currentUser} />} />
 
             </Route>
         </Routes>

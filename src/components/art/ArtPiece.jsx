@@ -1,6 +1,9 @@
 import { Card, CardBody, CardSubtitle, CardTitle, ListGroup, ListGroupItem } from "react-bootstrap"
+import { useNavigate } from "react-router-dom"
 
 export const ArtPiece = ({ artPiece }) => {
+
+    const navigate = useNavigate()
 
     return (
         <Card
@@ -9,7 +12,7 @@ export const ArtPiece = ({ artPiece }) => {
                 width: '18rem'
                     }}
          >
-            <CardBody>
+            {/* <CardBody>
                 <CardTitle tag="h5">
                     {artPiece.name}
                  </CardTitle>
@@ -19,17 +22,20 @@ export const ArtPiece = ({ artPiece }) => {
                 >
                     {artPiece.artist}
                 </CardSubtitle>
-                </CardBody>
+                </CardBody> */}
                 <img
                     alt="Card cap"
                     src={artPiece.url}
                     width="100%"
+                    onClick={() => {
+                        navigate(`/all/${ artPiece.id}`)
+                    }}
                 />
-            <ListGroup>
+            {/* <ListGroup>
                 <ListGroupItem>
                     {artPiece.blurb}
                 </ListGroupItem>
-            </ListGroup>
+            </ListGroup> */}
         </Card>              
     )
 

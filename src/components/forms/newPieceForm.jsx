@@ -1,7 +1,34 @@
 import { useState } from "react"
+import { createNewArtPiece } from "../../services/artService.jsx"
+import { useNavigate } from "react-router-dom"
 
 export const NewPieceForm = ({ currentUser }) => {
     const [artPiece, setArtPiece] = useState({ name: "", artist: "", medium: "", dimensions: "", dateCompleted: "", blurb: "", price: "", url: "" })
+
+    const navigate = useNavigate()
+
+    const handleSave = (event) => {
+        event.preventDefault()
+
+        if (artPiece.name && artPiece.artist && artPiece.medium && artPiece.dimensions && artPiece.dateCompleted && artPiece.blurb && artPiece.price && artPiece.url) {
+            const newArtPiece = {
+                name: artPiece.name,
+                artist: artPiece.artist,
+                medium: artPiece.medium,
+                dimensions: artPiece.dimensions,
+                dateCompleted: artPiece.dateCompleted,
+                blurb: artPiece.blurb,
+                price: artPiece.price,
+                url: artPiece.url
+            }
+            
+            createNewArtPiece(newArtPiece).then(() => {
+                navigate("/all")
+            })
+        } else {
+            window.alert("Please complete all fields")
+        }
+    }
 
     return (
         <form>
@@ -118,6 +145,15 @@ export const NewPieceForm = ({ currentUser }) => {
                         />
                     </div>
                 </fieldset>
+                <fieldset>
+                <div>
+                    <button
+                        onClick={handleSave}
+                    >
+                        Submit New Art Piece
+                    </button>
+                </div>
+            </fieldset>
         </form>
     )
 
