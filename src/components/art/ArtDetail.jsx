@@ -50,7 +50,7 @@ export const ArtDetail = ( { currentUser }) => {
             createComment(newComment)
                 .then(() => {
                     getAndSetComments(artPieceId),
-                    setComment({})
+                    setComment({comment: ''})
                 })
         } else {
             window.alert("Please leave a comment before submitting")
@@ -95,6 +95,7 @@ export const ArtDetail = ( { currentUser }) => {
                     {currentArtPiece.price}
                 </ListGroupItem>
             </ListGroup>
+                    
             {/* if the logged in user is an admin & the piece has not been purchased, a button to remove the piece will display */}
                     {currentUser?.isStaff && !currentArtPiece.dateSold ? (
                         <Button
@@ -126,6 +127,7 @@ export const ArtDetail = ( { currentUser }) => {
                     <Input
                         type="textarea"
                         placeholder="Leave a Comment"
+                        value={comment.comment}
                         onChange={(event) => {
                             const commentCopy = { ...comment }
                             commentCopy.comment = event.target.value
