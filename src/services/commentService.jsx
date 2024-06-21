@@ -8,7 +8,7 @@ export const createComment = (comment) => {
     })
 }
 
-export const getCommentsByArtPieceById = (artPieceId) => {
+export const getCommentsByArtPieceId = (artPieceId) => {
     return fetch(`http://localhost:8088/comments?pieceId=${artPieceId}&_expand=user`)
     .then((res) => res.json())
 }

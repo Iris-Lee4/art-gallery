@@ -415,7 +415,27 @@
       "comment": "dff",
       "timeStamp": "2024-06-21T16:05:19.080Z",
       "id": 29
+    },
+    {
+      "userId": 3,
+      "pieceId": 7,
+      "comment": "dsfgsdfg",
+      "timeStamp": "2024-06-21T19:00:15.714Z",
+      "id": 30
     }
   ],
-  "likedPieces": []
+  "likedPieces": [
+    {
+      "userId": 3,
+      "pieceId": 7,
+      "liked": true,
+      "id": 1
+    },
+    {
+      "userId": 3,
+      "pieceId": 1,
+      "liked": true,
+      "id": 2
+    }
+  ]
 }
