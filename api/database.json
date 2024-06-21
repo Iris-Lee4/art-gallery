@@ -79,6 +79,149 @@
       "dateSold": "6/18/2024"
     },
     {
+      "id": 2,
+      "name": "Water Lilies",
+      "artist": "Claude Monet",
+      "medium": "oil on canvas",
+      "dimensions": "200 x 1276 cm",
+      "dateCompleted": "1914-26",
+      "blurb": "In his later years, Monet focused on monumental works depicting the lily ponds of his Giverny gardens in France. By the late 19th century, he envisioned a series of grand compositions, or grandes décorations, surrounding viewers with water, flora, and sky. This vision materialized in about forty large panels, including Water Lilies, which Monet worked on from 1914 until his death in 1926. Water Lilies features a luminous pool of green and blue, reflecting lavender-tinged clouds. Darker strokes bleed into the left panel, while reddish-green vegetation dominates the right, blurring into near-abstraction without a horizon. After Monet’s death, twenty-two panels were gifted to France and installed at Paris/’ Musée de l/’Orangerie. The remaining canvases stayed in his studios until the late 1940s, when collectors and MoMA curators showed interest.",
+      "price": "$1,200",
+      "url": "https://www.moma.org/media/W1siZiIsIjI0Njc4NCJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=3a1ed95974c1c0be",
+      "userId": "",
+      "dateSold": ""
+    },
+    {
+      "id": 3,
+      "name": "Let's Walk to the Middle of the Ocean",
+      "artist": "Mark Bradford",
+      "medium": "paper, acrylic paint, acrylic varnish on canvas",
+      "dimensions": "259.1 x 365.8 cm",
+      "dateCompleted": "2015",
+      "blurb": "Mark Bradford, born in 1961 in Los Angeles, found inspiration for his art while working as a hairstylist in his mother's salon. He realized that end papers used in perms could be transformed into art. Layered and manipulated, these delicate sheets became his primary medium, showcased in works like 'Let's Walk to the Middle of the Ocean', a mixed media piece blending paper bits into stunning art. Bradford, now a prominent figure in American art, explores themes of class, race, and gender through collages, sculptures, videos, and large-scale installations. Based in South Los Angeles, where he grew up, Bradford is known for integrating art into his urban community. His breakthrough came in 2001 at the Studio Museum in Harlem's exhibition for young Black artists, and by 2017, he represented the United States at the Venice Biennale. Using found materials, Bradford acts as an urban archaeologist, often layering his art on maps or incorporating text to make social statements. His works resonate with themes from Black history to contemporary issues like the L.A. riots of the 1990s, blending aesthetic concerns with profound social commentary.",
+      "price": "$2,000",
+      "url": "https://www.moma.org/media/W1siZiIsIjMzOTExNiJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDc2OHg3NjhcdTAwM2UiXV0.jpg?sha=70dc71cbccc925a3",
+      "userId": "",
+      "dateSold": ""
+    },
+    {
+      "id": 4,
+      "name": "Siberian Salt Grinder",
+      "artist": "Jack Whitten",
+      "medium": "acrylic on canvas",
+      "dimensions": "203.2 x 127 cm",
+      "dateCompleted": "1974",
+      "blurb": "Jack Whitten, born in 1939 in Bessemer, Alabama, navigated a remarkable journey from the segregated South to New York's art scene amidst the civil rights movement. His work, however, diverges from literal representation, focusing instead on transforming perception through abstract forms. Experimenting in the early 1970s with Xerox and photographic techniques, Whitten poured acrylics and used unconventional tools like afro combs and squeegees to create dynamic, blurred compositions akin to rapid movement or radar scans. Amidst a climate favoring social realism, Whitten's art embraced mediums over messages, highlighting how societal struggles were evolving through mass media and technology.",
+      "price": "$1,200",
+      "url": "https://www.moma.org/media/W1siZiIsIjI0Njc4NCJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=3a1ed95974c1c0be",
+      "userId": "",
+      "dateSold": ""
+    },
+    {
+      "id": 5,
+      "name": "Ladybug",
+      "artist": "Joan Mitchell",
+      "medium": "oil on canvas",
+      "dimensions": "197.7 x 274 cm",
+      "dateCompleted": "1957",
+      "blurb": "In Mitchell's 'Ladybug,' vibrant brushstrokes of marigold, mauve, dark berry, and brown appear spontaneously arranged yet meticulously planned. Colors overlap and merge atop layers of white paint, creating a dynamic chromatic web against an illusion of empty space. Despite the seeming spontaneity, Mitchell's process was deliberate and controlled, emphasizing the relationships between each brushstroke and the balance between figure and ground. Unlike many Abstract Expressionists, she eschewed a fully allover composition, aiming instead to capture the essence of 'feelings' and memories through her paint. Painted in 1957 when Mitchell was thirty-two and living in New York, 'Ladybug' reflects her commitment to conveying personal experiences rather than depicting nature directly.",
+      "price": "$2200",
+      "url": "https://www.moma.org/media/W1siZiIsIjQ2MjU5MCJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDc2OHg3NjhcdTAwM2UiXV0.jpg?sha=9f7435c51c55834e",
+      "userId": "",
+      "dateSold": ""
+    },
+    {
+      "id": 6,
+      "name": "Flower Boys",
+      "artist": "Maia Cruz Palileo",
+      "medium": "gauche on paper",
+      "dimensions": "27.9 x 19.1 cm",
+      "dateCompleted": "2022",
+      "blurb": "Maia Cruz Palileo, a multidisciplinary artist, delves into themes of migration and belonging through her paintings, drawings, and sculptures. Influenced by oral histories of her family's journey from the Philippines to the U.S., Palileo also draws from her upbringing in the American Midwest, blending memory and imagination in her work. For instance, 'The Old Table' (2014) portrays an intimate gathering around a dining room table, capturing both personal narrative and universal themes. Palileo has showcased her art in solo exhibitions across the U.S., with venues in Chicago, Washington D.C., and New York highlighting her exploration of cultural identity and shared human experience.",
+      "price": "$3,500",
+      "url": "https://d7hftxdivxxvm.cloudfront.net/?height=800&quality=85&resize_to=fit&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FI6v3RQAA8mMkP7bbMAhnwA%2Fmain.jpg&width=548",
+      "userId": "",
+      "dateSold": ""
+    },
+    {
+      "id": 7,
+      "name": "Heinz Tomato Ketchup",
+      "artist": "Stephanie H. Shih",
+      "medium": "ceramic",
+      "dimensions": "8 x 2.5 x 2.5\"",
+      "dateCompleted": "2021",
+      "blurb": "Stephanie H. Shih's work explores diasporic nostalgia and the culinary lineage of Asian migration and colonization through painted ceramic sculptures. Each piece replicates everyday grocery store items like Spam, Kraft Singles, Heineken, and Ovaltine, common in both American and Asian communities. These products evoke cultural significance, rooted in histories of colonization and U.S. military presence in Asia. Shih’s intricate surface treatments make her objects uncannily realistic, blending gloss and matte techniques. Her social research, engaging over 20,000 Asian American followers, identifies Western products with Asian cultural resonance. Shih’s work, including her 2020 exhibition Same Same, reflects on consumerism, cultural interchange, and identity, set against the backdrop of immigrant experiences in places like Flushing, Queens.",
+      "price": "$1000",
+      "url": "https://artlogic-res.cloudinary.com/w_1800,h_1320,c_limit,f_auto,fl_lossy,q_auto/artlogicstorage/stanleys/images/view/22743736a1e6c112acf34cf09ce206e2/sebastiangladstone-stephanie-h.-shih-heinz-tomato-ketchup-2021.jpg",
+      "userId": "",
+      "dateSold": ""
+    },
+    {
+      "id": 9,
+      "name": "Accumulation",
+      "artist": "Yayoi Kusama",
+      "medium": "ink on paperboard",
+      "dimensions": "42.2 x 30.2 cm",
+      "dateCompleted": "1952",
+      "blurb": "Kusama's frequent use of polka dots has made this motif synonymous with her name. They first appear in her early works, such as Accumulation, an ink-on-paperboard piece featuring a field of black polka dots in empty space. This drawing is part of the thousands of paintings and drawings on paper she began creating in 1951 in Japan. Despite their intimate scale, these compositions evoke a sense of vastness for the artist. Kusama described them as reflecting “the great depth of my inner heart.” Accumulation, like much of her later work, is based on repetition and stems from the aural and visual hallucinations she has experienced since age 10. “I translate the hallucinations and obsessional images that plague me into sculptures and paintings,” she explained.",
+      "price": "$700",
+      "url": "https://www.moma.org/media/W1siZiIsIjE4MjM0MiJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDc2OHg3NjhcdTAwM2UiXV0.jpg?sha=89187d12804204e0",
+      "userId": "",
+      "dateSold": ""
+    },
+    {
+      "id": 10,
+      "name": "Kappa I",
+      "artist": "Jack Whitten",
+      "medium": "acrylic on canvas",
+      "dimensions": "193 x 162.6 cm",
+      "dateCompleted": "1976",
+      "blurb": "After a phase dedicated to emotionally expressive painting, Whitten chose to explore the potential of paint without the added burden of psychological implications. This led to the creation of his Energy Fields series. His process involves manipulating paint with various tools, including Afro combs, squeegees, rakes, and brooms. Whitten described his aim as 'defining a new spatial perception.'",
+      "price": "$3,200",
+      "url": "https://www.moma.org/media/W1siZiIsIjE1MTM2NCJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDc2OHg3NjhcdTAwM2UiXV0.jpg?sha=30972b5e2a37e622",
+      "userId": "",
+      "dateSold": ""
+    },
+    {
+      "id": 11,
+      "name": "No. F",
+      "artist": "Yayoi Kusama",
+      "medium": "oil on canvas",
+      "dimensions": "105.4 x 132.1 cm",
+      "dateCompleted": "1959",
+      "blurb": "Drawn by the social freedoms of the postwar American art scene, Kusama left Japan and moved to New York in 1958. There, she began creating her Infinity Nets series, including No. F., exploring themes of infinite repetition and space. By combining serial repetition with an allover painting technique, Kusama blurred the line between figure and ground, giving equal importance to both the interlocking brushstrokes and the spaces between them. The process of creating these paintings served as a form of catharsis for her. She explained, 'Forget yourself. Become one with eternity. Become part of your environment.'",
+      "price": "$2,200",
+      "url": "https://www.moma.org/media/W1siZiIsIjE1MTQzNiJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDc2OHg3NjhcdTAwM2UiXV0.jpg?sha=0581b36e4095590e",
+      "userId": "",
+      "dateSold": ""
+    },
+    {
+      "id": 12,
+      "name": "Watercolor, 4",
+      "artist": "Sam Gilliam",
+      "medium": "watercolor, and aluminum powder on fiberglass paper",
+      "dimensions": "60.3 x 45.9 cm",
+      "dateCompleted": "1969",
+      "blurb": "Since the early 1960s, Gilliam has created richly colored abstract compositions using watercolors. His works transform color and form into a physical, textural presence, extending beyond the two-dimensional surface. Gilliam’s watercolor techniques—staining, folding, and distressing the paper—have profoundly influenced his artistic practice. His early approach expanded upon the Washington Color School's staining technique. His recent works integrate color and support, creating depth and rhythm through vertical washes that evoke folds and pleats, reminiscent of his draped canvases. Chance and choice play a significant role in his process, reflecting the improvisatory nature of jazz.Since the early 1960s, Gilliam has created richly colored abstract compositions using watercolors. His works transform color and form into a physical, textural presence, extending beyond the two-dimensional surface. Gilliam’s watercolor techniques—staining, folding, and distressing the paper—have profoundly influenced his artistic practice. His early approach expanded upon the Washington Color School's staining technique. His recent works integrate color and support, creating depth and rhythm through vertical washes that evoke folds and pleats, reminiscent of his draped canvases. Chance and choice play a significant role in his process, reflecting the improvisatory nature of jazz.",
+      "price": "$1600",
+      "url": "https://www.moma.org/media/W1siZiIsIjMxODc5NiJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDc2OHg3NjhcdTAwM2UiXV0.jpg?sha=e7e73c5fd1991d91",
+      "userId": "",
+      "dateSold": ""
+    },
+    {
+      "id": 13,
+      "name": "Fallen Sky",
+      "artist": "Sarah Sze",
+      "medium": "stainless steel",
+      "dimensions": "installation",
+      "dateCompleted": "2021",
+      "blurb": "Sarah Sze’s Fallen Sky comprises 132 mirrored stainless steel elements nestled into the hillside, merging visually with the landscape. This installation collapses the horizon line, blending earth and sky. Viewers experience the surroundings along with reflections of clouds, birds, light variations, weather, seasons, and time of day. Sze describes Fallen Sky as “filmic” due to its dynamic nature and ability to depict “how the landscape behaves.” The clay model for Fallen Sky was created through erosion, resulting in a piece that appears as a ruin in partial deterioration. The sculpture explores the tension between material permanence and ephemerality, conveying a sense of entropy and the Earth’s fragile, ever-changing state.",
+      "price": "$12,200",
+      "url": "https://collections.stormking.org/media/collectiveaccess/images/3/1/33884_ca_object_representations_media_3104_page.jpg",
+      "userId": "",
+      "dateSold": ""
+    },
+    {
       "name": "Untitled",
       "artist": "Toshiko Takaezu",
       "medium": "glazed porcelain",
@@ -97,6 +240,104 @@
       "pieceId": 1,
       "comment": "love this",
       "timeStamp": "2024-05-24T19:56:15.268Z"
+    },
+    {
+      "userId": 5,
+      "pieceId": 10,
+      "comment": "too good",
+      "timeStamp": "2024-06-21T14:38:46.959Z",
+      "id": 5
+    },
+    {
+      "userId": 5,
+      "pieceId": 10,
+      "comment": "love it so much",
+      "timeStamp": "2024-06-21T14:47:26.050Z",
+      "id": 6
+    },
+    {
+      "userId": 5,
+      "pieceId": 10,
+      "comment": "yes!",
+      "timeStamp": "2024-06-21T14:52:22.119Z",
+      "id": 7
+    },
+    {
+      "userId": 5,
+      "pieceId": 10,
+      "comment": "yes!",
+      "timeStamp": "2024-06-21T14:53:20.367Z",
+      "id": 8
+    },
+    {
+      "userId": 5,
+      "pieceId": 10,
+      "comment": "so good",
+      "timeStamp": "2024-06-21T14:54:24.077Z",
+      "id": 9
+    },
+    {
+      "userId": 5,
+      "pieceId": 10,
+      "comment": "testing",
+      "timeStamp": "2024-06-21T14:56:45.353Z",
+      "id": 10
+    },
+    {
+      "userId": 5,
+      "pieceId": 10,
+      "comment": "halo",
+      "timeStamp": "2024-06-21T14:57:16.012Z",
+      "id": 11
+    },
+    {
+      "userId": 5,
+      "pieceId": 10,
+      "comment": "haloee",
+      "timeStamp": "2024-06-21T14:57:35.777Z",
+      "id": 12
+    },
+    {
+      "userId": 5,
+      "pieceId": 10,
+      "comment": "what abou tnow\n",
+      "timeStamp": "2024-06-21T14:58:56.691Z",
+      "id": 13
+    },
+    {
+      "userId": 5,
+      "pieceId": 10,
+      "comment": "hi hi hi\n",
+      "timeStamp": "2024-06-21T15:00:30.416Z",
+      "id": 14
+    },
+    {
+      "userId": 5,
+      "pieceId": 10,
+      "comment": "what about now",
+      "timeStamp": "2024-06-21T15:04:00.550Z",
+      "id": 15
+    },
+    {
+      "userId": 5,
+      "pieceId": 10,
+      "comment": "666",
+      "timeStamp": "2024-06-21T15:04:28.490Z",
+      "id": 16
+    },
+    {
+      "userId": 1,
+      "pieceId": 10,
+      "comment": "hi?",
+      "timeStamp": "2024-06-21T15:05:08.846Z",
+      "id": 17
+    },
+    {
+      "userId": 1,
+      "pieceId": 10,
+      "comment": "is this better",
+      "timeStamp": "2024-06-21T15:19:10.997Z",
+      "id": 18
     }
   ],
   "likedPieces": []
