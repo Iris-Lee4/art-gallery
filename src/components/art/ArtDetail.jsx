@@ -1,11 +1,14 @@
 import { useEffect, useState } from "react"
 import { useNavigate, useParams } from "react-router-dom"
 import { deleteArtPiece, getArtPieceById } from "../../services/artService.jsx"
-import { Button, Card, CardBody, CardSubtitle, CardTitle, Container, ListGroup, ListGroupItem } from "reactstrap"
+import { Button, Card, CardBody, CardSubtitle, CardTitle, Container, Input, ListGroup, ListGroupItem } from "reactstrap"
+import { createComment, getCommentsByArtPieceById } from "../../services/commentService.jsx"
 
 export const ArtDetail = ( { currentUser }) => {
 
     const [currentArtPiece, setCurrentArtPiece] = useState({})
+    const [comment, setComment] = useState({})
+    const [selectComments, setSelectedComments] = useState([])
 
     const { artPieceId } = useParams()
 
@@ -15,13 +18,43 @@ export const ArtDetail = ( { currentUser }) => {
         getArtPieceById(artPieceId).then((data) => {
             setCurrentArtPiece(data)
         })
+
+        getAndSetComments(artPieceId)
+
     }, [artPieceId])
+
+    const getAndSetComments = (artPieceId) => {
+        getCommentsByArtPieceById(artPieceId).then((data) => {
+            setSelectedComments(data)
+        })
+    }
 
     const handleDelete = () => {
         deleteArtPiece(currentArtPiece.id)
             .then(() => {
             navigate("/")
             })
+    }
+
+    const handleSave = () => {
+        event.preventDefault()
+
+        if (comment.comment) {
+            const newComment = {
+                userId: currentUser.id,
+                pieceId: parseInt(artPieceId),
+                comment: comment.comment,
+                timeStamp: new Date()
+            }
+
+            createComment(newComment)
+                .then(() => {
+                    getAndSetComments(artPieceId),
+                    setComment({comment: ''})
+                })
+        } else {
+            window.alert("Please leave a comment before submitting")
+        }
     }
 
     return (
@@ -62,6 +95,7 @@ export const ArtDetail = ( { currentUser }) => {
                     {currentArtPiece.price}
                 </ListGroupItem>
             </ListGroup>
+                    
             {/* if the logged in user is an admin & the piece has not been purchased, a button to remove the piece will display */}
                     {currentUser?.isStaff && !currentArtPiece.dateSold ? (
                         <Button
@@ -73,7 +107,40 @@ export const ArtDetail = ( { currentUser }) => {
                         ""
                     )}
 
-             </Card>    
+             </Card> 
+             <Card>
+                    <CardSubtitle>Comments</CardSubtitle>
+                    <ListGroup>
+                        {selectComments.map(comment => {
+                            return (
+                                <ListGroupItem
+                                    key={comment.id}
+                                    currentUser={currentUser}
+                                >
+                                    {comment.comment}
+
+                                    - {comment.user.firstName} {comment.user.lastName}
+                                </ListGroupItem>
+                            )
+                        })}
+                    </ListGroup>
+                    <Input
+                        type="textarea"
+                        placeholder="Leave a Comment"
+                        value={comment.comment}
+                        onChange={(event) => {
+                            const commentCopy = { ...comment }
+                            commentCopy.comment = event.target.value
+                            setComment(commentCopy)
+                        }}
+                    >
+                    </Input>
+                    <Button
+                        onClick={handleSave}
+                    >
+                        Submit
+                    </Button>
+            </Card>   
         </Container>
     )
 }
