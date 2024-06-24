@@ -23,3 +23,13 @@ export const deleteArtPiece = (artPieceId) => {
         method: "DELETE",
     })
 }
+
+export const updateArtPiece = (artPiece) => {
+    return fetch(`http://localhost:8088/pieces/${artPieceId}`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(artPiece)
+    })
+}

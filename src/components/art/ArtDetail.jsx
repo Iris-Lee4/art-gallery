@@ -95,7 +95,17 @@ export const ArtDetail = ( { currentUser }) => {
                     {currentArtPiece.price}
                 </ListGroupItem>
             </ListGroup>
-                    
+            {/* if the logged in user is an admin , a button to edit the piece will display */}
+            {currentUser?.isStaff && (
+                                    <Button
+                                        onClick={(e) => {
+                                            e.preventDefault
+                                            navigate(`/all/edit/${currentArtPiece.id}`)
+                                        }}
+                                    >
+                                        Edit
+                                    </Button>
+                                )}                    
             {/* if the logged in user is an admin & the piece has not been purchased, a button to remove the piece will display */}
                     {currentUser?.isStaff && !currentArtPiece.dateSold ? (
                         <Button
