@@ -5,7 +5,7 @@ import { Button, Card, CardBody, CardSubtitle, CardTitle, Container, Input, List
 import { createComment, getCommentsByArtPieceId } from "../../services/commentService.jsx"
 import { createLike, deleteLike, getLikesByArtPieceId } from "../../services/likeService.jsx"
 
-export const ArtDetail = ( { currentUser }) => {
+export const ArtDetail = ( { currentUser, getAndSetUserLikedPieces }) => {
 
     const [currentArtPiece, setCurrentArtPiece] = useState({})
     const [comment, setComment] = useState({})
@@ -74,6 +74,9 @@ export const ArtDetail = ( { currentUser }) => {
         createLike(newLike)
         .then(() => {
             getAndSetLikes(artPieceId)
+            .then(() => {
+                getAndSetUserLikedPieces()
+            })
         })
     }
 
@@ -81,6 +84,9 @@ export const ArtDetail = ( { currentUser }) => {
         deleteLike(userLiked.id)
         .then(() => {
             getAndSetLikes(artPieceId)
+        })
+        .then(() => {
+            getAndSetUserLikedPieces()
         })
     }
 
@@ -170,7 +176,7 @@ export const ArtDetail = ( { currentUser }) => {
                     )}
 
             {/* if the logged in user is an admin & the piece has not been purchased, a button to remove the piece will display */}
-                    {currentUser?.isStaff && !currentArtPiece.dateSold ? (
+            {currentUser?.isStaff && !currentArtPiece.dateSold ? (
                         <Button
                             onClick={(e) => {
                                 e.preventDefault
