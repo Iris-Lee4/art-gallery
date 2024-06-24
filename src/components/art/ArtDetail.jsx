@@ -22,10 +22,7 @@ export const ArtDetail = ( { currentUser }) => {
     useEffect(() => {
         getArtPieceById(artPieceId).then((data) => {
             setCurrentArtPiece(data)
-            console.log({currentArtPiece})
         })
-
-        console.log(artPieceId)
 
         getAndSetComments(artPieceId)
 
@@ -39,7 +36,7 @@ export const ArtDetail = ( { currentUser }) => {
         const countNumberLikes = likes.length
             setCountLikes(countNumberLikes)
 
-        const userLikedObj = likes.filter((like) => like.userId === currentUser.id)
+        const userLikedObj = likes.find((like) => like.userId === currentUser.id)
             setUserLiked(userLikedObj)
             console.log(userLiked)
 
@@ -152,7 +149,7 @@ export const ArtDetail = ( { currentUser }) => {
                 </ListGroupItem>
             </ListGroup>
             {/* if the logged in user is a customer, a button to like the piece will display */}
-                    {!currentUser?.isStaff && likedByUser === false && (
+            {!currentUser?.isStaff && likedByUser === false && (
                         <Button
                             onClick={handleLike}
                         >
@@ -163,7 +160,10 @@ export const ArtDetail = ( { currentUser }) => {
             {/* if the logged in user is a customer and the customer has liked the piece, a button to unlike the piece will display */}
             {!currentUser?.isStaff && likedByUser === true && (
                         <Button
-                            onClick={handleUnlike}
+                            onClick={(e) => {
+                                e.preventDefault
+                                handleUnlike()
+                            }}
                         >
                             Unlike
                         </Button>
@@ -172,7 +172,10 @@ export const ArtDetail = ( { currentUser }) => {
             {/* if the logged in user is an admin & the piece has not been purchased, a button to remove the piece will display */}
                     {currentUser?.isStaff && !currentArtPiece.dateSold ? (
                         <Button
-                            onClick={handleDelete}
+                            onClick={(e) => {
+                                e.preventDefault
+                                handleDelete()
+                            }}
                         >
                             Remove Piece from Gallery
                         </Button>
@@ -223,3 +226,4 @@ export const ArtDetail = ( { currentUser }) => {
 //         Remove Piece from Gallery
 //     </Button>
 // )}
+
