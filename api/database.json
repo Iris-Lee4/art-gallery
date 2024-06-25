@@ -232,6 +232,12 @@
       "pieceId": 7,
       "liked": true,
       "id": 4
+    },
+    {
+      "userId": 3,
+      "pieceId": 6,
+      "liked": true,
+      "id": 6
     }
   ]
 }

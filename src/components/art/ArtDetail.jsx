@@ -5,7 +5,7 @@ import { Button, Card, CardBody, CardSubtitle, CardTitle, Container, Input, List
 import { createComment, getCommentsByArtPieceId } from "../../services/commentService.jsx"
 import { createLike, deleteLike, getLikesByArtPieceId } from "../../services/likeService.jsx"
 
-export const ArtDetail = ( { currentUser, getAndSetUserLikedPieces }) => {
+export const ArtDetail = ( { currentUser }) => {
 
     const [currentArtPiece, setCurrentArtPiece] = useState({})
     const [comment, setComment] = useState({})
@@ -74,9 +74,6 @@ export const ArtDetail = ( { currentUser, getAndSetUserLikedPieces }) => {
         createLike(newLike)
         .then(() => {
             getAndSetLikes(artPieceId)
-            .then(() => {
-                getAndSetUserLikedPieces()
-            })
         })
     }
 
@@ -84,9 +81,6 @@ export const ArtDetail = ( { currentUser, getAndSetUserLikedPieces }) => {
         deleteLike(userLiked.id)
         .then(() => {
             getAndSetLikes(artPieceId)
-        })
-        .then(() => {
-            getAndSetUserLikedPieces()
         })
     }
 
