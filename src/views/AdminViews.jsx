@@ -5,6 +5,7 @@ import { ArtSoldList } from "../components/art/ArtSoldList.jsx"
 import { NewPieceForm } from "../components/forms/newPieceForm.jsx"
 import { UserDetails } from "../components/profile/ProfileDetails.jsx"
 import { ArtDetail } from "../components/art/ArtDetail.jsx"
+import { EditPieceForm } from "../components/forms/EditPieceForm.jsx"
 
 export const AdminViews = ({ currentUser }) => {
     return (
@@ -25,6 +26,8 @@ export const AdminViews = ({ currentUser }) => {
                         element={<ArtList currentUser={currentUser} />} />
                     <Route path=":artPieceId" 
                         element={<ArtDetail currentUser={currentUser} />} />
+                    <Route path="edit/:artPieceId" 
+                        element={<EditPieceForm currentUser={currentUser} /> } />
                 </Route>
                 <Route path="sold">
                     <Route index

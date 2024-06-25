@@ -5,14 +5,17 @@ import { getArtPieceById, updateArtPiece } from "../../services/artService.jsx"
 export const EditPieceForm = ( { currentUser }) => {
 
     const [currentArtPiece, setCurrentArtPiece] = useState({})
+
     const navigate = useNavigate()
+
     const {artPieceId} = useParams()
+
 
     useEffect(() => {
         getArtPieceById(artPieceId).then((artPiece) => {
             setCurrentArtPiece(artPiece)
         })
-    }, [])
+    }, [artPieceId])
 
     const handleInputChange = (event) => {
         const stateCopy = { ...currentArtPiece }
@@ -25,18 +28,19 @@ export const EditPieceForm = ( { currentUser }) => {
 
         if (currentArtPiece.name && currentArtPiece.artist && currentArtPiece.medium && currentArtPiece.dimensions && currentArtPiece.dateCompleted && currentArtPiece.blurb && currentArtPiece.price && currentArtPiece.url) {
             const editedArtPiece = {
-                name: artPiece.name,
-                artist: artPiece.artist,
-                medium: artPiece.medium,
-                dimensions: artPiece.dimensions,
-                dateCompleted: artPiece.dateCompleted,
-                blurb: artPiece.blurb,
-                price: artPiece.price,
-                url: artPiece.url
+                id: currentArtPiece.id,
+                name: currentArtPiece.name,
+                artist: currentArtPiece.artist,
+                medium: currentArtPiece.medium,
+                dimensions: currentArtPiece.dimensions,
+                dateCompleted: currentArtPiece.dateCompleted,
+                blurb: currentArtPiece.blurb,
+                price: currentArtPiece.price,
+                url: currentArtPiece.url
             }
             
             updateArtPiece(editedArtPiece).then(() => {
-                navigate("/all")
+                navigate(`/all/${currentArtPiece.id}`)
             })
         } else {
             window.alert("Please complete all fields")
@@ -63,6 +67,7 @@ export const EditPieceForm = ( { currentUser }) => {
                     <input 
                         type="text"
                         name="artist"
+                        value={currentArtPiece.artist}
                         onChange={handleInputChange}
                     />
                 </div>
@@ -73,6 +78,7 @@ export const EditPieceForm = ( { currentUser }) => {
                     <input 
                         type="text"
                         name="medium"
+                        value={currentArtPiece.medium}
                         onChange={handleInputChange}
                     />
                 </div>
@@ -83,6 +89,7 @@ export const EditPieceForm = ( { currentUser }) => {
                     <input 
                         type="text"
                         name="dimensions"
+                        value={currentArtPiece.dimensions}
                         onChange={handleInputChange}
                     />
                 </div>
@@ -93,6 +100,7 @@ export const EditPieceForm = ( { currentUser }) => {
                     <input 
                         type="year"
                         name="dateCompleted"
+                        value={currentArtPiece.dateCompleted}
                         onChange={handleInputChange}
                     />
                 </div>
@@ -103,6 +111,7 @@ export const EditPieceForm = ( { currentUser }) => {
                     <input 
                         type="text"
                         name="blurb"
+                        value={currentArtPiece.blurb}
                         onChange={handleInputChange}
                     />
                 </div>
@@ -111,8 +120,9 @@ export const EditPieceForm = ( { currentUser }) => {
                 <div>
                     <label>Price</label>
                     <input 
-                        type="number"
+                        type="string"
                         name="price"
+                        value={currentArtPiece.price}
                         onChange={handleInputChange}
                     />
                 </div>
@@ -123,6 +133,7 @@ export const EditPieceForm = ( { currentUser }) => {
                     <input 
                         type="text"
                         name="url"
+                        value={currentArtPiece.url}
                         onChange={handleInputChange}
                     />
                 </div>
@@ -132,7 +143,7 @@ export const EditPieceForm = ( { currentUser }) => {
                 <button
                     onClick={handleSave}
                 >
-                    Submit New Art Piece
+                    Submit Changes
                 </button>
             </div>
         </fieldset>

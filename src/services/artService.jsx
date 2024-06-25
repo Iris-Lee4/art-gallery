@@ -25,7 +25,7 @@ export const deleteArtPiece = (artPieceId) => {
 }
 
 export const updateArtPiece = (artPiece) => {
-    return fetch(`http://localhost:8088/pieces/${artPieceId}`, {
+    return fetch(`http://localhost:8088/pieces/${artPiece.id}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json"

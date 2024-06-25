@@ -38,7 +38,6 @@ export const ArtDetail = ( { currentUser }) => {
 
         const userLikedObj = likes.find((like) => like.userId === currentUser.id)
             setUserLiked(userLikedObj)
-            console.log(userLiked)
 
     }, [artPieceId, likes.length, currentUser, likedByUser])
     
@@ -143,17 +142,6 @@ export const ArtDetail = ( { currentUser }) => {
                     {currentArtPiece.price}
                 </ListGroupItem>
             </ListGroup>
-            {/* if the logged in user is an admin , a button to edit the piece will display */}
-            {currentUser?.isStaff && (
-                                    <Button
-                                        onClick={(e) => {
-                                            e.preventDefault
-                                            navigate(`/all/edit/${currentArtPiece.id}`)
-                                        }}
-                                    >
-                                        Edit
-                                    </Button>
-                                )}                    
             <ListGroup>
                 <ListGroupItem>
                    Liked by: {countLikes}
@@ -180,8 +168,17 @@ export const ArtDetail = ( { currentUser }) => {
                         </Button>
                     )}
 
-            {/* if the logged in user is an admin & the piece has not been purchased, a button to remove the piece will display */}
-            {currentUser?.isStaff && !currentArtPiece.dateSold ? (
+            {/* if the logged in user is an admin & the piece has not been purchased, a button to edit and a button to remove the piece will display */}
+            {currentUser?.isStaff && !currentArtPiece.dateSold && (
+                         <div>
+                         <Button
+                            onClick={(e) => {
+                                e.preventDefault
+                                navigate(`/all/edit/${currentArtPiece.id}`)
+                            }}
+                        >
+                            Edit
+                        </Button>                       
                         <Button
                             onClick={(e) => {
                                 e.preventDefault
@@ -190,9 +187,9 @@ export const ArtDetail = ( { currentUser }) => {
                         >
                             Remove Piece from Gallery
                         </Button>
-                    ) : (
-                        ""
-                    )}
+                        </div>
+                    )
+                    }
 
              </Card> 
              <Card>
@@ -231,10 +228,4 @@ export const ArtDetail = ( { currentUser }) => {
         </Container>
     )
 }
-
-// {currentUser.isStaff && !currentArtPiece.dateSold && (
-//     <Button>
-//         Remove Piece from Gallery
-//     </Button>
-// )}
 

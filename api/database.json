@@ -45,10 +45,8 @@
       "dimensions": "140 x 185 x 16\"",
       "dateCompleted": "1969",
       "blurb": "In 1968 (the year of the assassination of Martin Luther King Jr. and the signing of the Civil Rights Act) Gilliam began staining and folding raw canvases and suspending them from the wall, creating immersive bleeds of color. For Gilliam, 'the year 1968 was one of revelation . . . something was in the air, and it was in that spirit that I did the Drape paintings.' The works/' tension and free fall—subject to forces beyond the artist/'s control—paralleled the social turmoil of the time. As a Black artist and civil rights leader, Gilliam deliberately worked against the grain. Unlike many of his peers, he refrained from literal depictions or messages in his art. He was committed to abstraction, stating, 'the expressive act of making a mark and hanging it in space is always political. My work is as political as it is formal.' Gilliam/'s titles refer to historical and artistic events alike: 10/27/69 marks the date he completed this painting, against the backdrop of mass demonstrations protesting the Vietnam War. (MoMA Gallery label 2021)",
-      "price": "$1,000",
-      "url": "https://www.moma.org/d/assets/W1siZiIsIjIwMjEvMDkvMTQvczhubHZ2eDQ2XzNfMjAxNF9DQ0NSX0Z1bGxfc2l6ZV9KUEVHLmpwZyJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ/3_2014_CCCR-Full%20size%20JPEG.jpg?sha=3ec577106c59ac8c",
-      "userId": 1,
-      "dateSold": ""
+      "price": "$100,005",
+      "url": "https://www.moma.org/d/assets/W1siZiIsIjIwMjEvMDkvMTQvczhubHZ2eDQ2XzNfMjAxNF9DQ0NSX0Z1bGxfc2l6ZV9KUEVHLmpwZyJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ/3_2014_CCCR-Full%20size%20JPEG.jpg?sha=3ec577106c59ac8c"
     },
     {
       "id": 2,
@@ -207,7 +205,15 @@
       "dateSold": ""
     }
   ],
-  "comments": [],
+  "comments": [
+    {
+      "userId": 3,
+      "pieceId": 6,
+      "comment": "love the color balance\n",
+      "timeStamp": "2024-06-25T18:13:17.139Z",
+      "id": 1
+    }
+  ],
   "likedPieces": [
     {
       "userId": 2,
@@ -238,6 +244,12 @@
       "pieceId": 6,
       "liked": true,
       "id": 6
+    },
+    {
+      "userId": 3,
+      "pieceId": 10,
+      "liked": true,
+      "id": 7
     }
   ]
 }
