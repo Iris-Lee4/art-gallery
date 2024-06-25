@@ -2,20 +2,27 @@
   "users": [
     {
       "id": 1,
+      "firstName": "Dummy",
+      "lastName": "User",
+      "email": "UsingToHoldUnsoldPieces",
+      "isStaff": true
+    },
+    {
+      "id": 2,
       "firstName": "Michelle",
       "lastName": "Zauner",
       "email": "mzauner@artgallery.com",
       "isStaff": true
     },
     {
-      "id": 2,
+      "id": 3,
       "firstName": "C Pam",
       "lastName": "Zhang",
       "email": "cpzhang@artgallery.com",
       "isStaff": false
     },
     {
-      "id": 3,
+      "id": 4,
       "firstName": "Roxane",
       "lastName": "Gay",
       "email": "roxanegay@artgallery.com",
@@ -26,42 +33,7 @@
       "firstName": "Iris",
       "lastName": "Lee",
       "isStaff": true,
-      "id": 4
-    },
-    {
-      "email": "ojames@artgallery.com",
-      "firstName": "Oliver",
-      "lastName": "James",
-      "isStaff": true,
       "id": 5
-    },
-    {
-      "email": "oliver@james.com",
-      "firstName": "Ollie",
-      "lastName": "James",
-      "isStaff": true,
-      "id": 6
-    },
-    {
-      "email": "irisa@artgallery.com",
-      "firstName": "Irisa",
-      "lastName": "Larissa",
-      "isStaff": false,
-      "id": 7
-    },
-    {
-      "email": "sarah@asd.com",
-      "firstName": "Sarah",
-      "lastName": "Sarah",
-      "isStaff": true,
-      "id": 8
-    },
-    {
-      "email": "sarah@sarah.com",
-      "firstName": "sarah",
-      "lastName": "sarah",
-      "isStaff": true,
-      "id": 9
     }
   ],
   "pieces": [
@@ -75,8 +47,8 @@
       "blurb": "In 1968 (the year of the assassination of Martin Luther King Jr. and the signing of the Civil Rights Act) Gilliam began staining and folding raw canvases and suspending them from the wall, creating immersive bleeds of color. For Gilliam, 'the year 1968 was one of revelation . . . something was in the air, and it was in that spirit that I did the Drape paintings.' The works/' tension and free fall—subject to forces beyond the artist/'s control—paralleled the social turmoil of the time. As a Black artist and civil rights leader, Gilliam deliberately worked against the grain. Unlike many of his peers, he refrained from literal depictions or messages in his art. He was committed to abstraction, stating, 'the expressive act of making a mark and hanging it in space is always political. My work is as political as it is formal.' Gilliam/'s titles refer to historical and artistic events alike: 10/27/69 marks the date he completed this painting, against the backdrop of mass demonstrations protesting the Vietnam War. (MoMA Gallery label 2021)",
       "price": "$1,000",
       "url": "https://www.moma.org/d/assets/W1siZiIsIjIwMjEvMDkvMTQvczhubHZ2eDQ2XzNfMjAxNF9DQ0NSX0Z1bGxfc2l6ZV9KUEVHLmpwZyJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ/3_2014_CCCR-Full%20size%20JPEG.jpg?sha=3ec577106c59ac8c",
-      "userId": "3",
-      "dateSold": "6/18/2024"
+      "userId": 1,
+      "dateSold": ""
     },
     {
       "id": 2,
@@ -88,7 +60,7 @@
       "blurb": "In his later years, Monet focused on monumental works depicting the lily ponds of his Giverny gardens in France. By the late 19th century, he envisioned a series of grand compositions, or grandes décorations, surrounding viewers with water, flora, and sky. This vision materialized in about forty large panels, including Water Lilies, which Monet worked on from 1914 until his death in 1926. Water Lilies features a luminous pool of green and blue, reflecting lavender-tinged clouds. Darker strokes bleed into the left panel, while reddish-green vegetation dominates the right, blurring into near-abstraction without a horizon. After Monet’s death, twenty-two panels were gifted to France and installed at Paris/’ Musée de l/’Orangerie. The remaining canvases stayed in his studios until the late 1940s, when collectors and MoMA curators showed interest.",
       "price": "$1,200",
       "url": "https://www.moma.org/media/W1siZiIsIjI0Njc4NCJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=3a1ed95974c1c0be",
-      "userId": "",
+      "userId": 1,
       "dateSold": ""
     },
     {
@@ -101,7 +73,7 @@
       "blurb": "Mark Bradford, born in 1961 in Los Angeles, found inspiration for his art while working as a hairstylist in his mother's salon. He realized that end papers used in perms could be transformed into art. Layered and manipulated, these delicate sheets became his primary medium, showcased in works like 'Let's Walk to the Middle of the Ocean', a mixed media piece blending paper bits into stunning art. Bradford, now a prominent figure in American art, explores themes of class, race, and gender through collages, sculptures, videos, and large-scale installations. Based in South Los Angeles, where he grew up, Bradford is known for integrating art into his urban community. His breakthrough came in 2001 at the Studio Museum in Harlem's exhibition for young Black artists, and by 2017, he represented the United States at the Venice Biennale. Using found materials, Bradford acts as an urban archaeologist, often layering his art on maps or incorporating text to make social statements. His works resonate with themes from Black history to contemporary issues like the L.A. riots of the 1990s, blending aesthetic concerns with profound social commentary.",
       "price": "$2,000",
       "url": "https://www.moma.org/media/W1siZiIsIjMzOTExNiJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDc2OHg3NjhcdTAwM2UiXV0.jpg?sha=70dc71cbccc925a3",
-      "userId": "",
+      "userId": 1,
       "dateSold": ""
     },
     {
@@ -114,7 +86,7 @@
       "blurb": "Jack Whitten, born in 1939 in Bessemer, Alabama, navigated a remarkable journey from the segregated South to New York's art scene amidst the civil rights movement. His work, however, diverges from literal representation, focusing instead on transforming perception through abstract forms. Experimenting in the early 1970s with Xerox and photographic techniques, Whitten poured acrylics and used unconventional tools like afro combs and squeegees to create dynamic, blurred compositions akin to rapid movement or radar scans. Amidst a climate favoring social realism, Whitten's art embraced mediums over messages, highlighting how societal struggles were evolving through mass media and technology.",
       "price": "$1,200",
       "url": "https://www.moma.org/media/W1siZiIsIjI0Njc4NCJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=3a1ed95974c1c0be",
-      "userId": "",
+      "userId": 1,
       "dateSold": ""
     },
     {
@@ -127,7 +99,7 @@
       "blurb": "In Mitchell's 'Ladybug,' vibrant brushstrokes of marigold, mauve, dark berry, and brown appear spontaneously arranged yet meticulously planned. Colors overlap and merge atop layers of white paint, creating a dynamic chromatic web against an illusion of empty space. Despite the seeming spontaneity, Mitchell's process was deliberate and controlled, emphasizing the relationships between each brushstroke and the balance between figure and ground. Unlike many Abstract Expressionists, she eschewed a fully allover composition, aiming instead to capture the essence of 'feelings' and memories through her paint. Painted in 1957 when Mitchell was thirty-two and living in New York, 'Ladybug' reflects her commitment to conveying personal experiences rather than depicting nature directly.",
       "price": "$2200",
       "url": "https://www.moma.org/media/W1siZiIsIjQ2MjU5MCJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDc2OHg3NjhcdTAwM2UiXV0.jpg?sha=9f7435c51c55834e",
-      "userId": "",
+      "userId": 1,
       "dateSold": ""
     },
     {
@@ -140,7 +112,7 @@
       "blurb": "Maia Cruz Palileo, a multidisciplinary artist, delves into themes of migration and belonging through her paintings, drawings, and sculptures. Influenced by oral histories of her family's journey from the Philippines to the U.S., Palileo also draws from her upbringing in the American Midwest, blending memory and imagination in her work. For instance, 'The Old Table' (2014) portrays an intimate gathering around a dining room table, capturing both personal narrative and universal themes. Palileo has showcased her art in solo exhibitions across the U.S., with venues in Chicago, Washington D.C., and New York highlighting her exploration of cultural identity and shared human experience.",
       "price": "$3,500",
       "url": "https://d7hftxdivxxvm.cloudfront.net/?height=800&quality=85&resize_to=fit&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FI6v3RQAA8mMkP7bbMAhnwA%2Fmain.jpg&width=548",
-      "userId": "",
+      "userId": 1,
       "dateSold": ""
     },
     {
@@ -153,7 +125,7 @@
       "blurb": "Stephanie H. Shih's work explores diasporic nostalgia and the culinary lineage of Asian migration and colonization through painted ceramic sculptures. Each piece replicates everyday grocery store items like Spam, Kraft Singles, Heineken, and Ovaltine, common in both American and Asian communities. These products evoke cultural significance, rooted in histories of colonization and U.S. military presence in Asia. Shih’s intricate surface treatments make her objects uncannily realistic, blending gloss and matte techniques. Her social research, engaging over 20,000 Asian American followers, identifies Western products with Asian cultural resonance. Shih’s work, including her 2020 exhibition Same Same, reflects on consumerism, cultural interchange, and identity, set against the backdrop of immigrant experiences in places like Flushing, Queens.",
       "price": "$1000",
       "url": "https://artlogic-res.cloudinary.com/w_1800,h_1320,c_limit,f_auto,fl_lossy,q_auto/artlogicstorage/stanleys/images/view/22743736a1e6c112acf34cf09ce206e2/sebastiangladstone-stephanie-h.-shih-heinz-tomato-ketchup-2021.jpg",
-      "userId": "",
+      "userId": 1,
       "dateSold": ""
     },
     {
@@ -166,7 +138,7 @@
       "blurb": "Kusama's frequent use of polka dots has made this motif synonymous with her name. They first appear in her early works, such as Accumulation, an ink-on-paperboard piece featuring a field of black polka dots in empty space. This drawing is part of the thousands of paintings and drawings on paper she began creating in 1951 in Japan. Despite their intimate scale, these compositions evoke a sense of vastness for the artist. Kusama described them as reflecting “the great depth of my inner heart.” Accumulation, like much of her later work, is based on repetition and stems from the aural and visual hallucinations she has experienced since age 10. “I translate the hallucinations and obsessional images that plague me into sculptures and paintings,” she explained.",
       "price": "$700",
       "url": "https://www.moma.org/media/W1siZiIsIjE4MjM0MiJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDc2OHg3NjhcdTAwM2UiXV0.jpg?sha=89187d12804204e0",
-      "userId": "",
+      "userId": 1,
       "dateSold": ""
     },
     {
@@ -179,7 +151,7 @@
       "blurb": "After a phase dedicated to emotionally expressive painting, Whitten chose to explore the potential of paint without the added burden of psychological implications. This led to the creation of his Energy Fields series. His process involves manipulating paint with various tools, including Afro combs, squeegees, rakes, and brooms. Whitten described his aim as 'defining a new spatial perception.'",
       "price": "$3,200",
       "url": "https://www.moma.org/media/W1siZiIsIjE1MTM2NCJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDc2OHg3NjhcdTAwM2UiXV0.jpg?sha=30972b5e2a37e622",
-      "userId": "",
+      "userId": 1,
       "dateSold": ""
     },
     {
@@ -192,7 +164,7 @@
       "blurb": "Drawn by the social freedoms of the postwar American art scene, Kusama left Japan and moved to New York in 1958. There, she began creating her Infinity Nets series, including No. F., exploring themes of infinite repetition and space. By combining serial repetition with an allover painting technique, Kusama blurred the line between figure and ground, giving equal importance to both the interlocking brushstrokes and the spaces between them. The process of creating these paintings served as a form of catharsis for her. She explained, 'Forget yourself. Become one with eternity. Become part of your environment.'",
       "price": "$2,200",
       "url": "https://www.moma.org/media/W1siZiIsIjE1MTQzNiJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDc2OHg3NjhcdTAwM2UiXV0.jpg?sha=0581b36e4095590e",
-      "userId": "",
+      "userId": 1,
       "dateSold": ""
     },
     {
@@ -205,7 +177,7 @@
       "blurb": "Since the early 1960s, Gilliam has created richly colored abstract compositions using watercolors. His works transform color and form into a physical, textural presence, extending beyond the two-dimensional surface. Gilliam’s watercolor techniques—staining, folding, and distressing the paper—have profoundly influenced his artistic practice. His early approach expanded upon the Washington Color School's staining technique. His recent works integrate color and support, creating depth and rhythm through vertical washes that evoke folds and pleats, reminiscent of his draped canvases. Chance and choice play a significant role in his process, reflecting the improvisatory nature of jazz.Since the early 1960s, Gilliam has created richly colored abstract compositions using watercolors. His works transform color and form into a physical, textural presence, extending beyond the two-dimensional surface. Gilliam’s watercolor techniques—staining, folding, and distressing the paper—have profoundly influenced his artistic practice. His early approach expanded upon the Washington Color School's staining technique. His recent works integrate color and support, creating depth and rhythm through vertical washes that evoke folds and pleats, reminiscent of his draped canvases. Chance and choice play a significant role in his process, reflecting the improvisatory nature of jazz.",
       "price": "$1600",
       "url": "https://www.moma.org/media/W1siZiIsIjMxODc5NiJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDc2OHg3NjhcdTAwM2UiXV0.jpg?sha=e7e73c5fd1991d91",
-      "userId": "",
+      "userId": 1,
       "dateSold": ""
     },
     {
@@ -218,7 +190,7 @@
       "blurb": "Sarah Sze’s Fallen Sky comprises 132 mirrored stainless steel elements nestled into the hillside, merging visually with the landscape. This installation collapses the horizon line, blending earth and sky. Viewers experience the surroundings along with reflections of clouds, birds, light variations, weather, seasons, and time of day. Sze describes Fallen Sky as “filmic” due to its dynamic nature and ability to depict “how the landscape behaves.” The clay model for Fallen Sky was created through erosion, resulting in a piece that appears as a ruin in partial deterioration. The sculpture explores the tension between material permanence and ephemerality, conveying a sense of entropy and the Earth’s fragile, ever-changing state.",
       "price": "$12,200",
       "url": "https://collections.stormking.org/media/collectiveaccess/images/3/1/33884_ca_object_representations_media_3104_page.jpg",
-      "userId": "",
+      "userId": 1,
       "dateSold": ""
     },
     {
@@ -230,192 +202,42 @@
       "blurb": "Born in Hawaii to Okinawan parents, Toshiko Takaezu was a masterful artist known for her ceramic sculptures, treating them as abstract paintings in the round. Her gestural style, distinctive palettes, and complex glazes align with Abstract Expressionists. Takaezu introduced an element of chance, as final colors emerged only after firing. She often exhibited her ceramics in groups, alongside her innovative paintings and textiles, in arrangements responding to their environments. This exhibition traces her development from potter to multimedia installation artist.",
       "price": "3500",
       "url": "https://images.squarespace-cdn.com/content/v1/5c40c21ef8370ad59ce093a4/1557371684975-KIAJ0RSSZ4XE0J33JSOQ/xttw3%2C+private+collection%2C+1980s%2C+approx+16+x+9.jpeg?format=1000w",
-      "id": 14
+      "id": 14,
+      "userId": 1,
+      "dateSold": ""
     }
   ],
-  "comments": [
+  "comments": [],
+  "likedPieces": [
     {
-      "id": 1,
-      "userId": 1,
+      "userId": 2,
       "pieceId": 1,
-      "comment": "love this",
-      "timeStamp": "2024-05-24T19:56:15.268Z"
+      "liked": true,
+      "id": 1
     },
     {
-      "userId": 5,
-      "pieceId": 10,
-      "comment": "too good",
-      "timeStamp": "2024-06-21T14:38:46.959Z",
-      "id": 5
+      "userId": 2,
+      "pieceId": 3,
+      "liked": true,
+      "id": 2
     },
     {
-      "userId": 5,
+      "userId": 2,
       "pieceId": 10,
-      "comment": "love it so much",
-      "timeStamp": "2024-06-21T14:47:26.050Z",
+      "liked": true,
+      "id": 3
+    },
+    {
+      "userId": 2,
+      "pieceId": 7,
+      "liked": true,
+      "id": 4
+    },
+    {
+      "userId": 3,
+      "pieceId": 6,
+      "liked": true,
       "id": 6
-    },
-    {
-      "userId": 5,
-      "pieceId": 10,
-      "comment": "yes!",
-      "timeStamp": "2024-06-21T14:52:22.119Z",
-      "id": 7
-    },
-    {
-      "userId": 5,
-      "pieceId": 10,
-      "comment": "yes!",
-      "timeStamp": "2024-06-21T14:53:20.367Z",
-      "id": 8
-    },
-    {
-      "userId": 5,
-      "pieceId": 10,
-      "comment": "so good",
-      "timeStamp": "2024-06-21T14:54:24.077Z",
-      "id": 9
-    },
-    {
-      "userId": 5,
-      "pieceId": 10,
-      "comment": "testing",
-      "timeStamp": "2024-06-21T14:56:45.353Z",
-      "id": 10
-    },
-    {
-      "userId": 5,
-      "pieceId": 10,
-      "comment": "halo",
-      "timeStamp": "2024-06-21T14:57:16.012Z",
-      "id": 11
-    },
-    {
-      "userId": 5,
-      "pieceId": 10,
-      "comment": "haloee",
-      "timeStamp": "2024-06-21T14:57:35.777Z",
-      "id": 12
-    },
-    {
-      "userId": 5,
-      "pieceId": 10,
-      "comment": "what abou tnow\n",
-      "timeStamp": "2024-06-21T14:58:56.691Z",
-      "id": 13
-    },
-    {
-      "userId": 5,
-      "pieceId": 10,
-      "comment": "hi hi hi\n",
-      "timeStamp": "2024-06-21T15:00:30.416Z",
-      "id": 14
-    },
-    {
-      "userId": 5,
-      "pieceId": 10,
-      "comment": "what about now",
-      "timeStamp": "2024-06-21T15:04:00.550Z",
-      "id": 15
-    },
-    {
-      "userId": 5,
-      "pieceId": 10,
-      "comment": "666",
-      "timeStamp": "2024-06-21T15:04:28.490Z",
-      "id": 16
-    },
-    {
-      "userId": 1,
-      "pieceId": 10,
-      "comment": "hi?",
-      "timeStamp": "2024-06-21T15:05:08.846Z",
-      "id": 17
-    },
-    {
-      "userId": 1,
-      "pieceId": 10,
-      "comment": "is this better",
-      "timeStamp": "2024-06-21T15:19:10.997Z",
-      "id": 18
-    },
-    {
-      "userId": 1,
-      "pieceId": 10,
-      "comment": "is this better??????",
-      "timeStamp": "2024-06-21T15:25:47.303Z",
-      "id": 19
-    },
-    {
-      "userId": 2,
-      "pieceId": 2,
-      "comment": "asdfasdf",
-      "timeStamp": "2024-06-21T15:28:53.242Z",
-      "id": 20
-    },
-    {
-      "userId": 2,
-      "pieceId": 2,
-      "comment": "hm?\n",
-      "timeStamp": "2024-06-21T15:28:59.349Z",
-      "id": 21
-    },
-    {
-      "userId": 2,
-      "pieceId": 2,
-      "comment": "why",
-      "timeStamp": "2024-06-21T15:34:26.342Z",
-      "id": 22
-    },
-    {
-      "userId": 2,
-      "pieceId": 2,
-      "comment": "what about now",
-      "timeStamp": "2024-06-21T15:36:39.903Z",
-      "id": 23
-    },
-    {
-      "userId": 2,
-      "pieceId": 2,
-      "comment": "[object Object]f",
-      "timeStamp": "2024-06-21T15:40:42.446Z",
-      "id": 24
-    },
-    {
-      "userId": 2,
-      "pieceId": 2,
-      "comment": "werwerw",
-      "timeStamp": "2024-06-21T15:40:49.618Z",
-      "id": 25
-    },
-    {
-      "userId": 2,
-      "pieceId": 2,
-      "comment": "what abou this?",
-      "timeStamp": "2024-06-21T15:41:18.579Z",
-      "id": 26
-    },
-    {
-      "userId": 2,
-      "pieceId": 2,
-      "comment": "asdfasdf",
-      "timeStamp": "2024-06-21T15:41:31.536Z",
-      "id": 27
-    },
-    {
-      "userId": 2,
-      "pieceId": 2,
-      "comment": "dfddddddddddddddddd",
-      "timeStamp": "2024-06-21T16:00:27.226Z",
-      "id": 28
-    },
-    {
-      "userId": 2,
-      "pieceId": 2,
-      "comment": "dff",
-      "timeStamp": "2024-06-21T16:05:19.080Z",
-      "id": 29
     }
-  ],
-  "likedPieces": []
+  ]
 }
