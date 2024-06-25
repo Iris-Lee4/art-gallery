@@ -19,7 +19,9 @@ export const NewPieceForm = ({ currentUser }) => {
                 dateCompleted: artPiece.dateCompleted,
                 blurb: artPiece.blurb,
                 price: artPiece.price,
-                url: artPiece.url
+                url: artPiece.url,
+                userId: 1,
+                dateSold: ""
             }
             
             createNewArtPiece(newArtPiece).then(() => {
