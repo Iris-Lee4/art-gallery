@@ -33,3 +33,4 @@ export const updateArtPiece = (artPiece) => {
         body: JSON.stringify(artPiece)
     })
 }
+

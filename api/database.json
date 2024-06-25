@@ -46,7 +46,9 @@
       "dateCompleted": "1969",
       "blurb": "In 1968 (the year of the assassination of Martin Luther King Jr. and the signing of the Civil Rights Act) Gilliam began staining and folding raw canvases and suspending them from the wall, creating immersive bleeds of color. For Gilliam, 'the year 1968 was one of revelation . . . something was in the air, and it was in that spirit that I did the Drape paintings.' The works/' tension and free fall—subject to forces beyond the artist/'s control—paralleled the social turmoil of the time. As a Black artist and civil rights leader, Gilliam deliberately worked against the grain. Unlike many of his peers, he refrained from literal depictions or messages in his art. He was committed to abstraction, stating, 'the expressive act of making a mark and hanging it in space is always political. My work is as political as it is formal.' Gilliam/'s titles refer to historical and artistic events alike: 10/27/69 marks the date he completed this painting, against the backdrop of mass demonstrations protesting the Vietnam War. (MoMA Gallery label 2021)",
       "price": "$100,005",
-      "url": "https://www.moma.org/d/assets/W1siZiIsIjIwMjEvMDkvMTQvczhubHZ2eDQ2XzNfMjAxNF9DQ0NSX0Z1bGxfc2l6ZV9KUEVHLmpwZyJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ/3_2014_CCCR-Full%20size%20JPEG.jpg?sha=3ec577106c59ac8c"
+      "url": "https://www.moma.org/d/assets/W1siZiIsIjIwMjEvMDkvMTQvczhubHZ2eDQ2XzNfMjAxNF9DQ0NSX0Z1bGxfc2l6ZV9KUEVHLmpwZyJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ/3_2014_CCCR-Full%20size%20JPEG.jpg?sha=3ec577106c59ac8c",
+      "userId": 3,
+      "dateSold": "2024-06-25T19:24:43.245Z"
     },
     {
       "id": 2,
@@ -110,8 +112,8 @@
       "blurb": "Maia Cruz Palileo, a multidisciplinary artist, delves into themes of migration and belonging through her paintings, drawings, and sculptures. Influenced by oral histories of her family's journey from the Philippines to the U.S., Palileo also draws from her upbringing in the American Midwest, blending memory and imagination in her work. For instance, 'The Old Table' (2014) portrays an intimate gathering around a dining room table, capturing both personal narrative and universal themes. Palileo has showcased her art in solo exhibitions across the U.S., with venues in Chicago, Washington D.C., and New York highlighting her exploration of cultural identity and shared human experience.",
       "price": "$3,500",
       "url": "https://d7hftxdivxxvm.cloudfront.net/?height=800&quality=85&resize_to=fit&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FI6v3RQAA8mMkP7bbMAhnwA%2Fmain.jpg&width=548",
-      "userId": 1,
-      "dateSold": ""
+      "userId": 3,
+      "dateSold": "2024-06-25T19:32:30.711Z"
     },
     {
       "id": 7,
@@ -250,6 +252,12 @@
       "pieceId": 10,
       "liked": true,
       "id": 7
+    },
+    {
+      "userId": 3,
+      "pieceId": 1,
+      "liked": true,
+      "id": 8
     }
   ]
 }

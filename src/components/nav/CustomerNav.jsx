@@ -33,7 +33,7 @@ export const CustomerNav = (args) => {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/mine">
+              <NavLink href="/purchased">
                 My Pieces
               </NavLink>
             </NavItem>
