@@ -4,6 +4,7 @@ import { ArtList } from "../components/art/ArtList.jsx"
 import { UserDetails } from "../components/profile/ProfileDetails.jsx"
 import { ArtDetail } from "../components/art/ArtDetail.jsx"
 import { LikedList } from "../components/liked/LikedList.jsx"
+import { PurchasedList } from "../components/purchase/PurchasedList.jsx"
 
 export const CustomerViews = ({ currentUser }) => {
     return (
@@ -26,6 +27,8 @@ export const CustomerViews = ({ currentUser }) => {
                 </Route>
                 <Route path="liked"
                     element={<LikedList currentUser={currentUser} />} />
+                <Route path="purchased"
+                    element={<PurchasedList currentUser={currentUser} />} />
                 <Route path="profile"
                     element={<UserDetails currentUser={currentUser} />} />
 

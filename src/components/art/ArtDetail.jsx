@@ -4,6 +4,7 @@ import { deleteArtPiece, getArtPieceById } from "../../services/artService.jsx"
 import { Button, Card, CardBody, CardSubtitle, CardTitle, Container, Input, ListGroup, ListGroupItem } from "reactstrap"
 import { createComment, getCommentsByArtPieceId } from "../../services/commentService.jsx"
 import { createLike, deleteLike, getLikesByArtPieceId } from "../../services/likeService.jsx"
+import { purchaseArtPiece } from "../../services/purchaseService.jsx"
 
 export const ArtDetail = ( { currentUser }) => {
 
@@ -104,6 +105,29 @@ export const ArtDetail = ( { currentUser }) => {
         }
     }
 
+        
+    const handlePurchase = (event) => {
+
+        const purchasedArtPiece = {
+                id: currentArtPiece.id,
+                name: currentArtPiece.name,
+                artist: currentArtPiece.artist,
+                medium: currentArtPiece.medium,
+                dimensions: currentArtPiece.dimensions,
+                dateCompleted: currentArtPiece.dateCompleted,
+                blurb: currentArtPiece.blurb,
+                price: currentArtPiece.price,
+                url: currentArtPiece.url,
+                userId: currentUser.id,
+                dateSold: new Date(),
+            }
+            
+            purchaseArtPiece(purchasedArtPiece).then(() => {
+                navigate(`/purchased`)
+            })
+
+    }
+
     return (
         <Container>
             <Card
@@ -167,6 +191,18 @@ export const ArtDetail = ( { currentUser }) => {
                             Unlike
                         </Button>
                     )}
+            {/* if the logged in user is a customer and the piece has not been purchased, a button to purchase the piece will display */}
+            {!currentUser?.isStaff && !currentArtPiece.dateSold && (
+                        <Button
+                            onClick={(e) => {
+                                e.preventDefault
+                                handlePurchase()
+                            }}
+                        >
+                            Purchase
+                        </Button>
+                    )}
+
 
             {/* if the logged in user is an admin & the piece has not been purchased, a button to edit and a button to remove the piece will display */}
             {currentUser?.isStaff && !currentArtPiece.dateSold && (
