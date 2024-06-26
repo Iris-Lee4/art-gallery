@@ -1,5 +1,6 @@
-import { Card, CardBody, CardSubtitle, CardTitle, ListGroup, ListGroupItem } from "react-bootstrap"
+
 import { useNavigate } from "react-router-dom"
+import { Card } from "reactstrap"
 
 export const ArtPiece = ({ artPiece }) => {
 
@@ -11,6 +12,9 @@ export const ArtPiece = ({ artPiece }) => {
             style={{
                 width: '18rem'
                     }}
+            color="light"
+            outline={false}
+            
          >
                 <img
                     alt="Card cap"

@@ -34,6 +34,13 @@
       "lastName": "Lee",
       "isStaff": true,
       "id": 5
+    },
+    {
+      "email": "iris@lee.com",
+      "firstName": "Iris",
+      "lastName": "Lee",
+      "isStaff": true,
+      "id": 6
     }
   ],
   "pieces": [
@@ -85,7 +92,7 @@
       "dateCompleted": "1974",
       "blurb": "Jack Whitten, born in 1939 in Bessemer, Alabama, navigated a remarkable journey from the segregated South to New York's art scene amidst the civil rights movement. His work, however, diverges from literal representation, focusing instead on transforming perception through abstract forms. Experimenting in the early 1970s with Xerox and photographic techniques, Whitten poured acrylics and used unconventional tools like afro combs and squeegees to create dynamic, blurred compositions akin to rapid movement or radar scans. Amidst a climate favoring social realism, Whitten's art embraced mediums over messages, highlighting how societal struggles were evolving through mass media and technology.",
       "price": "$1,200",
-      "url": "https://www.moma.org/media/W1siZiIsIjI0Njc4NCJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=3a1ed95974c1c0be",
+      "url": "https://www.moma.org/media/W1siZiIsIjMwNjcwOSJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDc2OHg3NjhcdTAwM2UiXV0.jpg?sha=1a4d1d0f1eff474c",
       "userId": 1,
       "dateSold": ""
     },
@@ -214,6 +221,13 @@
       "comment": "love the color balance\n",
       "timeStamp": "2024-06-25T18:13:17.139Z",
       "id": 1
+    },
+    {
+      "userId": 3,
+      "pieceId": 2,
+      "comment": "hello",
+      "timeStamp": "2024-06-26T18:59:15.076Z",
+      "id": 2
     }
   ],
   "likedPieces": [
@@ -243,12 +257,6 @@
     },
     {
       "userId": 3,
-      "pieceId": 6,
-      "liked": true,
-      "id": 6
-    },
-    {
-      "userId": 3,
       "pieceId": 10,
       "liked": true,
       "id": 7
@@ -258,6 +266,12 @@
       "pieceId": 1,
       "liked": true,
       "id": 8
+    },
+    {
+      "userId": 3,
+      "pieceId": 6,
+      "liked": true,
+      "id": 9
     }
   ]
 }

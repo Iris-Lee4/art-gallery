@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { getAllArtPieces } from "../../services/artService.jsx"
 import { Container } from "react-bootstrap"
 import { ArtPiece } from "./ArtPiece.jsx"
+import { Row } from "reactstrap"
 
 export const ArtList = ({ currentUser }) => {
 
@@ -19,9 +20,11 @@ export const ArtList = ({ currentUser }) => {
     },[])
 
     return (
-        <Container>
-            <article>
+        <Container
+            fluid
+        >
                 <h5>All Pieces</h5>
+                <Row>
                 {artPieces.map(artPiece => {
                     return <ArtPiece 
                             artPiece={artPiece}
@@ -29,7 +32,7 @@ export const ArtList = ({ currentUser }) => {
                             currentUser={currentUser}
                         /> 
                 })}
-            </article>
+                </Row>
     </Container>
     )
 }

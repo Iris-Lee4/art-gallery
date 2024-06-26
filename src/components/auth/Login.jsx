@@ -1,7 +1,8 @@
 import { useState } from "react"
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { Register } from "./Register.jsx"
 import { getUserByEmail } from "../../services/userService.jsx"
+import { Button } from "reactstrap"
 
 export const Login = () => {
   const [email, set] = useState("")
@@ -59,8 +60,10 @@ export const Login = () => {
         </form>
       </section>
       <section>
-        <h2>Not a Member Yet?</h2>
-        <Register />
+        <Link to="/register"
+        >
+          Not a Member Yet?
+          </Link>
       </section>
     </main>
   )
