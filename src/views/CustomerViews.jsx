@@ -5,6 +5,7 @@ import { UserDetails } from "../components/profile/ProfileDetails.jsx"
 import { ArtDetail } from "../components/art/ArtDetail.jsx"
 import { LikedList } from "../components/liked/LikedList.jsx"
 import { PurchasedList } from "../components/purchase/PurchasedList.jsx"
+import { ArtListCarousel } from "../components/art/ArtListCarousel.jsx"
 
 export const CustomerViews = ({ currentUser }) => {
     return (
@@ -18,7 +19,7 @@ export const CustomerViews = ({ currentUser }) => {
                     </>
                 }
             >
-                <Route index element={<ArtList currentUser={currentUser}/>} />
+                <Route index element={<ArtListCarousel currentUser={currentUser}/>} />
                 <Route path="all">
                     <Route index
                         element={<ArtList currentUser={currentUser}/>} />
@@ -31,7 +32,6 @@ export const CustomerViews = ({ currentUser }) => {
                     element={<PurchasedList currentUser={currentUser} />} />
                 <Route path="profile"
                     element={<UserDetails currentUser={currentUser} />} />
-
             </Route>
         </Routes>
     )

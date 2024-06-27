@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { useNavigate, useParams } from "react-router-dom"
 import { getArtPieceById, updateArtPiece } from "../../services/artService.jsx"
 
-export const EditPieceForm = ( { currentUser }) => {
+export const EditPieceForm = ({ currentUser }) => {
 
     const [currentArtPiece, setCurrentArtPiece] = useState({})
 

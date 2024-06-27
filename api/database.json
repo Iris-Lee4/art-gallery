@@ -228,6 +228,13 @@
       "comment": "hello",
       "timeStamp": "2024-06-26T18:59:15.076Z",
       "id": 2
+    },
+    {
+      "userId": 3,
+      "pieceId": 1,
+      "comment": "hihi hi",
+      "timeStamp": "2024-06-27T14:34:41.494Z",
+      "id": 3
     }
   ],
   "likedPieces": [

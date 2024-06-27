@@ -6,6 +6,7 @@ import { NewPieceForm } from "../components/forms/NewPieceForm.jsx"
 import { UserDetails } from "../components/profile/ProfileDetails.jsx"
 import { ArtDetail } from "../components/art/ArtDetail.jsx"
 import { EditPieceForm } from "../components/forms/EditPieceForm.jsx"
+import { ArtListCarousel } from "../components/art/ArtListCarousel.jsx"
 
 export const AdminViews = ({ currentUser }) => {
     return (
@@ -19,7 +20,7 @@ export const AdminViews = ({ currentUser }) => {
                     </>
                 }
             >
-                <Route index element={<ArtList currentUser={currentUser} />} />
+                <Route index element={<ArtListCarousel currentUser={currentUser} />} />
 
                 <Route path="all">
                     <Route index
