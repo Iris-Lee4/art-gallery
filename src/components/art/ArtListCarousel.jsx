@@ -9,24 +9,6 @@ import {
 import { getAllArtPieces } from '../../services/artService.jsx';
 import "./Art.css"
 
-// const items = [
-//   {
-//     id: 1,
-//     altText: 'Slide 1',
-//     caption: 'Slide 1',
-//   },
-//   {
-//     id: 2,
-//     altText: 'Slide 2',
-//     caption: 'Slide 2',
-//   },
-//   {
-//     id: 3,
-//     altText: 'Slide 3',
-//     caption: 'Slide 3',
-//   },
-// ];
-
 export const ArtListCarousel = () => { 
 
     const [artPieces, setArtPieces] = useState([])
@@ -84,16 +66,15 @@ export const ArtListCarousel = () => {
     <div>
       <style>
         {`.custom-tag {
-            //   max-width: 100%;
-            //   height: 50%px;
-              background: black;
+            max-width: 100%;
+            height: 50%px;
+            background: black;
             }`}
       </style>
       <Carousel 
         activeIndex={activeIndex}
         next={next}
         previous={previous}
-        pause='hover'
         keyboard={true}
         >
         <CarouselIndicators

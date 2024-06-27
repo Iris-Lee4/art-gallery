@@ -2,7 +2,7 @@ import { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import { Register } from "./Register.jsx"
 import { getUserByEmail } from "../../services/userService.jsx"
-import { Button } from "reactstrap"
+import { Button, Container, Form, FormGroup } from "reactstrap"
 
 export const Login = () => {
   const [email, set] = useState("")
@@ -32,12 +32,11 @@ export const Login = () => {
   }
 
   return (
-    <main className="container-login">
-      <section>
-        <form className="form-login" onSubmit={handleLogin}>
+    <Container className="container-login">
+        <Form className="form-login" onSubmit={handleLogin}>
           <h1>Art Gallery</h1>
           <h2>Please sign in</h2>
-          <fieldset>
+          <FormGroup>
             <div className="form-group">
               <input
                 type="email"
@@ -49,22 +48,18 @@ export const Login = () => {
                 autoFocus
               />
             </div>
-          </fieldset>
-          <fieldset>
+          </FormGroup>
+          <FormGroup>
             <div className="form-group">
               <button className="login-btn btn-info" type="submit">
                 Sign in
               </button>
             </div>
-          </fieldset>
-        </form>
-      </section>
-      <section>
+          </FormGroup>
+        </Form>      
         <Link to="/register"
         >
           Not a Member Yet?
-          </Link>
-      </section>
-    </main>
+          </Link>    </Container>
   )
 }

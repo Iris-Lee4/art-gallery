@@ -104,8 +104,8 @@ export const NewPieceForm = ({ currentUser }) => {
                         
                             <Label>blurb</Label>
                             <Input
-                                type="text"
-                                placeholder="blurb"
+                                type="textarea"
+                                placeholder="a few words about the work or the artist"
                                 onChange={(event) => {
                                     const artPieceCopy = { ...artPiece }
                                     artPieceCopy.blurb = event.target.value
