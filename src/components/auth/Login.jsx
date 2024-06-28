@@ -33,7 +33,10 @@ export const Login = () => {
 
   return (
     <Container className="container-login">
-        <Form className="form-login" onSubmit={handleLogin}>
+        <Form 
+            className="form-login"
+            onSubmit={handleLogin}
+        >
           <h1>Art Gallery</h1>
           <h2>Please sign in</h2>
           <FormGroup>
