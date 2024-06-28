@@ -72,7 +72,7 @@ export const EditPieceForm = ({ currentUser }) => {
                         />
                 </FormGroup>
                 <FormGroup>
-                        <label>medium</label>
+                        <label>Medium</label>
                         <Input 
                             type="text"
                             name="medium"
@@ -81,7 +81,7 @@ export const EditPieceForm = ({ currentUser }) => {
                         />
                 </FormGroup>
                 <FormGroup>
-                        <label>dimensions</label>
+                        <label>Dimensions</label>
                         <Input 
                             type="text"
                             name="dimensions"
@@ -99,7 +99,7 @@ export const EditPieceForm = ({ currentUser }) => {
                         />
                 </FormGroup>
                 <FormGroup>
-                        <label>blurb</label>
+                        <label>Blurb</label>
                         <Input 
                             type="textarea"
                             name="blurb"
@@ -110,7 +110,7 @@ export const EditPieceForm = ({ currentUser }) => {
                 <FormGroup>
                         <label>Price</label>
                         <Input 
-                            type="string"
+                            type="number"
                             name="price"
                             value={currentArtPiece.price}
                             onChange={handleInputChange}

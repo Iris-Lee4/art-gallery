@@ -1,6 +1,6 @@
 
 import { useNavigate } from "react-router-dom"
-import { Card, Popover, PopoverHeader } from "reactstrap"
+import { Card } from "reactstrap"
 
 export const ArtPiece = ({ artPiece }) => {
 

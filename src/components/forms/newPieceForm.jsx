@@ -63,7 +63,7 @@ export const NewPieceForm = ({ currentUser }) => {
                     </FormGroup>
                     <FormGroup>
                         
-                            <Label>medium</Label>
+                            <Label>Medium</Label>
                             <Input
                                 type="text"
                                 placeholder="medium"
@@ -76,7 +76,7 @@ export const NewPieceForm = ({ currentUser }) => {
                     </FormGroup>
                     <FormGroup>
                         
-                            <Label>dimensions</Label>
+                            <Label>Dimensions</Label>
                             <Input
                                 type="text"
                                 placeholder="dimensions"
@@ -102,7 +102,7 @@ export const NewPieceForm = ({ currentUser }) => {
                     </FormGroup>
                     <FormGroup>
                         
-                            <Label>blurb</Label>
+                            <Label>Blurb</Label>
                             <Input
                                 type="textarea"
                                 placeholder="a few words about the work or the artist"

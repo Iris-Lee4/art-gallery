@@ -5,6 +5,8 @@ import { Button, Card, CardBody, CardSubtitle, CardTitle, Container, Input, List
 import { createComment, getCommentsByArtPieceId } from "../../services/commentService.jsx"
 import { createLike, deleteLike, getLikesByArtPieceId } from "../../services/likeService.jsx"
 import { purchaseArtPiece } from "../../services/purchaseService.jsx"
+import { Comment } from "../comments/Comment.jsx"
+import { ArtPieceDetails } from "./ArtPieceDetails.jsx"
 
 export const ArtDetail = ( { currentUser }) => {
 
@@ -130,42 +132,7 @@ export const ArtDetail = ( { currentUser }) => {
 
     return (
         <Container>
-            <Card
-            key={currentArtPiece.id}
-            style={{
-                width: '18rem'
-                    }}
-         >
-            <CardBody>
-                <CardTitle tag="h5">
-                    {currentArtPiece.name}
-                 </CardTitle>
-                <CardSubtitle
-                    className="mb-2 text-muted"
-                    tag="h6"
-                >
-                    {currentArtPiece.artist}
-                </CardSubtitle>
-                </CardBody>
-                <img
-                    alt="Card cap"
-                    src={currentArtPiece.url}
-                    width="100%"
-                />
-            <ListGroup>
-                <ListGroupItem>
-                    {currentArtPiece.blurb}
-                </ListGroupItem>
-                <ListGroupItem>
-                    {currentArtPiece.medium}
-                </ListGroupItem>
-                <ListGroupItem>
-                    {currentArtPiece.dateCompleted}
-                </ListGroupItem>
-                <ListGroupItem>
-                    {currentArtPiece.price}
-                </ListGroupItem>
-            </ListGroup>
+                <ArtPieceDetails currentArtPiece={currentArtPiece} />
             <ListGroup>
                 <ListGroupItem>
                    Liked by: {countLikes}
@@ -226,40 +193,35 @@ export const ArtDetail = ( { currentUser }) => {
                         </div>
                     )
                     }
-
-             </Card> 
              <Card>
-                    <CardSubtitle>Comments</CardSubtitle>
-                    <ListGroup>
-                        {selectComments.map(comment => {
-                            return (
-                                <ListGroupItem
-                                    key={comment.id}
-                                    currentUser={currentUser}
-                                >
-                                    {comment.comment}
-
-                                    - {comment.user.firstName} {comment.user.lastName}
-                                </ListGroupItem>
-                            )
-                        })}
-                    </ListGroup>
-                    <Input
-                        type="textarea"
-                        placeholder="Leave a Comment"
-                        value={comment.comment}
-                        onChange={(event) => {
-                            const commentCopy = { ...comment }
-                            commentCopy.comment = event.target.value
-                            setComment(commentCopy)
-                        }}
-                    >
-                    </Input>
-                    <Button
-                        onClick={handleSave}
-                    >
-                        Submit
-                    </Button>
+                <CardSubtitle>Comments</CardSubtitle>
+                <ListGroup>
+                    {selectComments.map(comment => {
+                        return (
+                            <Comment
+                            comment={comment}
+                            key={comment.id}
+                            currentUser={currentUser}
+                            />
+                        )
+                    })}
+                </ListGroup>
+                <Input
+                    type="textarea"
+                    placeholder="Leave a Comment"
+                    value={comment.comment}
+                    onChange={(event) => {
+                        const commentCopy = { ...comment }
+                        commentCopy.comment = event.target.value
+                        setComment(commentCopy)
+                    }}
+                >
+                </Input>
+                <Button
+                    onClick={handleSave}
+                >
+                    Submit
+                </Button>
             </Card>   
         </Container>
     )
