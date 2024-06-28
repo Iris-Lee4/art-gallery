@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { getUserById } from "../../services/userService.jsx"
+import { Container, ListGroup, ListGroupItem, ListGroupItemHeading } from "reactstrap"
 
 export const UserDetails = ({ currentUser }) => {
 
@@ -13,48 +14,18 @@ export const UserDetails = ({ currentUser }) => {
     }, [currentUser])
 
     return (
-        <section>
-            <header>
-                My Profile
-            </header>
-            <div> 
-                <span>
-                {user.firstName} {user.lastName}
-
-                </span>
-            </div>
-            <div>
-                <span>
-                    {user.email}
-                </span>
-            </div>
-        </section>
+        <Container>
+            <ListGroup>
+                <ListGroupItemHeading>
+                    My Profile
+                </ListGroupItemHeading>
+                <ListGroupItem> 
+                    Name: {user.firstName} {user.lastName}
+                </ListGroupItem>
+                <ListGroupItem>
+                        Email: {user.email}
+                </ListGroupItem>
+            </ListGroup>
+        </Container>
     )
 }
-
-// export const UserDetails = () => {
-
-//     const [user, setUser] = useState({})
-//     const { userId } = useParams()
-
-//     useEffect(() => {
-//         getUserById(userId)
-//         .then((data) => {
-//             const userObj = data[0]
-//             setUser(userObj)
-//         })
-//     }, [userId])
-
-//     return (
-//         <section>
-//             <header>
-//                 {user?.firstName} {user?.lastName}
-//             </header>
-//             <div>
-//                 <span>
-//                     {user?.email}
-//                 </span>
-//             </div>
-//         </section>
-//     )
-// }

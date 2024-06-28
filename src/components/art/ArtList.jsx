@@ -2,13 +2,26 @@ import { useEffect, useState } from "react"
 import { getAllArtPieces } from "../../services/artService.jsx"
 import { Container } from "react-bootstrap"
 import { ArtPiece } from "./ArtPiece.jsx"
+import { Row } from "reactstrap"
 
 export const ArtList = ({ currentUser }) => {
 
     const [artPieces, setArtPieces] = useState([])
 
     const getAndSetPieces = () => {
-        getAllArtPieces().then(artArray => {
+
+        const shuffle = (array) => {
+            for (var i = array.length - 1; i > 0; i--) {
+              var j = Math.floor(Math.random() * (i + 1));
+              var temp = array[i];
+              array[i] = array[j];
+              array[j] = temp;
+            }
+          }
+
+        getAllArtPieces()
+            .then(artArray => {
+            shuffle(artArray)
             setArtPieces(artArray)
         })
     }
@@ -19,9 +32,15 @@ export const ArtList = ({ currentUser }) => {
     },[])
 
     return (
-        <Container>
-            <article>
-                <h5>All Pieces</h5>
+        <Container
+            // fluid={true}
+        >
+                       <h5>All Pieces</h5>
+                <Row
+                    // fluid={true}
+                    xs="2"
+                >
+
                 {artPieces.map(artPiece => {
                     return <ArtPiece 
                             artPiece={artPiece}
@@ -29,7 +48,7 @@ export const ArtList = ({ currentUser }) => {
                             currentUser={currentUser}
                         /> 
                 })}
-            </article>
+                </Row>
     </Container>
     )
 }

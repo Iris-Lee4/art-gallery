@@ -10,7 +10,7 @@ export const ArtSoldList = ({ artPiece }) => {
     useEffect(() => {
         getAllArtPieces().then(artArray => {
             const soldPieces = artArray.filter(
-                art => art.dateSold !== "0/0/0000"
+                art => art.dateSold 
             )
             setSoldArtPieces(soldPieces)
         })

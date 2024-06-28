@@ -11,13 +11,19 @@ import {
 
 export const AdminNav = (args) => {
 
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   const toggle = () => setIsOpen(!isOpen);
 
   return (
     <div>
-      <Navbar {...args}>
+      <Navbar {...args}
+        container='fluid'
+        expand={true}
+        // fixed='top'
+        color='dark'
+        dark
+      >
         <NavbarBrand href="/">Art Gallery</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>

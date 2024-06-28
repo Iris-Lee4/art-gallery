@@ -17,7 +17,13 @@ export const CustomerNav = (args) => {
 
   return (
     <div>
-      <Navbar {...args}>
+      <Navbar {...args}
+        container='fluid'
+        expand={true}
+        fixed='top'
+        color='dark'
+        dark
+      >
         <NavbarBrand href="/">Art Gallery</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
