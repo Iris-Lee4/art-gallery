@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { getLikedPiecesByUser } from "../../services/likeService.jsx"
-import { Container } from "reactstrap"
+import { Container, Row } from "reactstrap"
 import { ArtPiece } from "../art/ArtPiece.jsx"
 import { getPurchasedByUserId } from "../../services/purchaseService.jsx"
 
@@ -20,7 +20,7 @@ export const PurchasedList = ({ currentUser }) => {
 
     return (
         <Container>
-            <article>
+                <Row>
                 <h5>Purchased Pieces</h5>
                 {userPurchasedPieces.map(purchasedArtPiece => {
                     return <ArtPiece
@@ -29,7 +29,7 @@ export const PurchasedList = ({ currentUser }) => {
                             currentUser={currentUser}
                         /> 
                 })}
-            </article>
+                </Row>
     </Container>
     )
 

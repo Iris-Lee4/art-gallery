@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { useNavigate, useParams } from "react-router-dom"
 import { deleteArtPiece, getArtPieceById } from "../../services/artService.jsx"
-import { Button, Card, CardBody, CardSubtitle, CardTitle, Container, Input, ListGroup, ListGroupItem } from "reactstrap"
+import { Badge, Button, Card, CardBody, CardSubtitle, CardTitle, Container, Input, ListGroup, ListGroupItem } from "reactstrap"
 import { createComment, getCommentsByArtPieceId } from "../../services/commentService.jsx"
 import { createLike, deleteLike, getLikesByArtPieceId } from "../../services/likeService.jsx"
 import { purchaseArtPiece } from "../../services/purchaseService.jsx"
@@ -131,11 +131,25 @@ export const ArtDetail = ( { currentUser }) => {
     }
 
     return (
-        <Container>
-                <ArtPieceDetails currentArtPiece={currentArtPiece} />
+        <Container
+            fluid
+            style={{
+                width: '50rem'
+            }}
+        >
             <ListGroup>
-                <ListGroupItem>
-                   Liked by: {countLikes}
+                <ArtPieceDetails currentArtPiece={currentArtPiece} />
+            </ListGroup>
+            <ListGroup
+                flush
+            >
+                <ListGroupItem
+                    color=""
+                >
+                   Liked by:   
+                   <Badge>
+                    {countLikes}
+                   </Badge>
                 </ListGroupItem>
             </ListGroup>
             {/* if the logged in user is a customer, a button to like the piece will display */}
@@ -179,6 +193,7 @@ export const ArtDetail = ( { currentUser }) => {
                                 e.preventDefault
                                 navigate(`/all/edit/${currentArtPiece.id}`)
                             }}
+                            color="dark"
                         >
                             Edit
                         </Button>                       
@@ -193,9 +208,14 @@ export const ArtDetail = ( { currentUser }) => {
                         </div>
                     )
                     }
-             <Card>
-                <CardSubtitle>Comments</CardSubtitle>
-                <ListGroup>
+             <ListGroup
+                color="dark"
+                inverse
+             >
+                <h5>Comments</h5>
+                <ListGroup
+                flush
+                >
                     {selectComments.map(comment => {
                         return (
                             <Comment
@@ -222,7 +242,7 @@ export const ArtDetail = ( { currentUser }) => {
                 >
                     Submit
                 </Button>
-            </Card>   
+            </ListGroup>   
         </Container>
     )
 }

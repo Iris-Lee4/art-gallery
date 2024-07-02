@@ -7,6 +7,7 @@ export const Comment = ({ comment, currentUser }) => {
         <ListGroupItem
         key={comment.id}
         currentUser={currentUser}
+        color="dark"
         >
         {comment.comment}
 
@@ -15,7 +16,3 @@ export const Comment = ({ comment, currentUser }) => {
     )
 
 }
-
-
-
-

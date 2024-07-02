@@ -35,12 +35,10 @@ export const ArtList = ({ currentUser }) => {
         <Container
             // fluid={true}
         >
-                       <h5>All Pieces</h5>
                 <Row
                     // fluid={true}
                     xs="2"
                 >
-
                 {artPieces.map(artPiece => {
                     return <ArtPiece 
                             artPiece={artPiece}

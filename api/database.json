@@ -41,6 +41,20 @@
       "lastName": "Lee",
       "isStaff": true,
       "id": 6
+    },
+    {
+      "email": "iris@irislee.com",
+      "firstName": "Iris",
+      "lastName": "Lee",
+      "isStaff": true,
+      "id": 7
+    },
+    {
+      "email": "rebecca@kamp.com",
+      "firstName": "Rebecca",
+      "lastName": "Kamp",
+      "isStaff": false,
+      "id": 8
     }
   ],
   "pieces": [
@@ -119,8 +133,8 @@
       "blurb": "Stephanie H. Shih's work explores diasporic nostalgia and the culinary lineage of Asian migration and colonization through painted ceramic sculptures. Each piece replicates everyday grocery store items like Spam, Kraft Singles, Heineken, and Ovaltine, common in both American and Asian communities. These products evoke cultural significance, rooted in histories of colonization and U.S. military presence in Asia. Shih’s intricate surface treatments make her objects uncannily realistic, blending gloss and matte techniques. Her social research, engaging over 20,000 Asian American followers, identifies Western products with Asian cultural resonance. Shih’s work, including her 2020 exhibition Same Same, reflects on consumerism, cultural interchange, and identity, set against the backdrop of immigrant experiences in places like Flushing, Queens.",
       "price": 1000,
       "url": "https://artlogic-res.cloudinary.com/w_1800,h_1320,c_limit,f_auto,fl_lossy,q_auto/artlogicstorage/stanleys/images/view/22743736a1e6c112acf34cf09ce206e2/sebastiangladstone-stephanie-h.-shih-heinz-tomato-ketchup-2021.jpg",
-      "userId": 1,
-      "dateSold": ""
+      "userId": 8,
+      "dateSold": "2024-07-02T15:05:31.652Z"
     },
     {
       "id": 9,
@@ -145,8 +159,8 @@
       "blurb": "After a phase dedicated to emotionally expressive painting, Whitten chose to explore the potential of paint without the added burden of psychological implications. This led to the creation of his Energy Fields series. His process involves manipulating paint with various tools, including Afro combs, squeegees, rakes, and brooms. Whitten described his aim as 'defining a new spatial perception.'",
       "price": 3200,
       "url": "https://www.moma.org/media/W1siZiIsIjE1MTM2NCJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDc2OHg3NjhcdTAwM2UiXV0.jpg?sha=30972b5e2a37e622",
-      "userId": 1,
-      "dateSold": ""
+      "userId": 3,
+      "dateSold": "2024-07-02T19:33:30.182Z"
     },
     {
       "id": 11,
@@ -312,6 +326,7 @@
       "url": "https://www.joanmitchellfoundation.org/uploads/artwork/mitchell/_AUTOx690_crop_center-center_65_none/0001-1957-George_Went_Swimming-Joan-Mitchell.jpg"
     },
     {
+      "id": 25,
       "name": "Merci",
       "artist": "Joan Mitchell",
       "medium": "oil on canvas",
@@ -320,9 +335,8 @@
       "blurb": "Joan Mitchell (1925-1992) was a prominent abstract artist with a career spanning over four decades. She worked with various mediums, including oil on canvas, pastel on paper, and lithography. Born in Chicago, Mitchell attended the School of the Art Institute of Chicago and traveled to France in 1947. Her paintings became increasingly abstract, and upon returning to the U.S., she joined the New York School of painters and poets. She exhibited in the 1951 \"9th Street Show\" and later divided her time between New York and France, eventually settling in Vétheuil, France, in 1968. Mitchell's work drew from her deep connection to landscapes, trees, water, and her memories, transforming these elements into vibrant, abstract expressions.",
       "price": 2750,
       "url": "https://www.joanmitchellfoundation.org/uploads/artwork/mitchell/_2500xAUTO_crop_center-center_65_none/1036-1992-Merci-Joan-Mitchell.jpg",
-      "userId": 1,
-      "dateSold": "",
-      "id": 25
+      "userId": 8,
+      "dateSold": "2024-07-02T15:05:16.005Z"
     },
     {
       "name": "Annie",
@@ -398,13 +412,6 @@
     },
     {
       "userId": 3,
-      "pieceId": 2,
-      "comment": "hello",
-      "timeStamp": "2024-06-26T18:59:15.076Z",
-      "id": 2
-    },
-    {
-      "userId": 3,
       "pieceId": 1,
       "comment": "hihi hi",
       "timeStamp": "2024-06-27T14:34:41.494Z",
@@ -430,6 +437,20 @@
       "comment": "hahah",
       "timeStamp": "2024-06-28T14:36:12.398Z",
       "id": 6
+    },
+    {
+      "userId": 7,
+      "pieceId": 16,
+      "comment": "I like this one.",
+      "timeStamp": "2024-07-02T15:03:32.136Z",
+      "id": 7
+    },
+    {
+      "userId": 5,
+      "pieceId": 7,
+      "comment": "best thing ever",
+      "timeStamp": "2024-07-02T19:20:19.847Z",
+      "id": 8
     }
   ],
   "likedPieces": [
@@ -459,12 +480,6 @@
     },
     {
       "userId": 3,
-      "pieceId": 10,
-      "liked": true,
-      "id": 7
-    },
-    {
-      "userId": 3,
       "pieceId": 1,
       "liked": true,
       "id": 8
@@ -474,6 +489,24 @@
       "pieceId": 6,
       "liked": true,
       "id": 9
+    },
+    {
+      "userId": 8,
+      "pieceId": 25,
+      "liked": true,
+      "id": 10
+    },
+    {
+      "userId": 8,
+      "pieceId": 18,
+      "liked": true,
+      "id": 11
+    },
+    {
+      "userId": 3,
+      "pieceId": 10,
+      "liked": true,
+      "id": 12
     }
   ]
 }

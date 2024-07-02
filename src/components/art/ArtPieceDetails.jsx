@@ -1,46 +1,44 @@
 
 import { ListGroup } from "react-bootstrap"
-import { Card, CardBody, CardSubtitle, CardTitle, ListGroupItem } from "reactstrap"
+import { Card, CardBody, CardColumns, CardFooter, CardHeader, CardImg, CardSubtitle, CardText, CardTitle, ListGroupItem } from "reactstrap"
 
 export const ArtPieceDetails = ({ currentArtPiece }) => {
 
     return (
         <Card
         key={currentArtPiece.id}
-        style={{
-            width: '18rem'
-                }}
+        color="dark"
+        inverse
+        fluid
      >
-        <CardBody>
             <CardTitle tag="h5">
                 {currentArtPiece.name}
              </CardTitle>
             <CardSubtitle
-                className="mb-2 text-muted"
+                // className="mb-2 text-muted"
                 tag="h6"
             >
                 {currentArtPiece.artist}
             </CardSubtitle>
-            </CardBody>
-            <img
+            <CardImg
                 alt="Card cap"
                 src={currentArtPiece.url}
                 width="100%"
             />
-        <ListGroup>
-            <ListGroupItem>
+            <CardBody>
+                <CardText>
+                {currentArtPiece.dateCompleted} 
+                </CardText>
+                <CardText>
+                {currentArtPiece.medium} 
+                </CardText>
+                <CardText>
                 {currentArtPiece.blurb}
-            </ListGroupItem>
-            <ListGroupItem>
-                {currentArtPiece.medium}
-            </ListGroupItem>
-            <ListGroupItem>
-                {currentArtPiece.dateCompleted}
-            </ListGroupItem>
-            <ListGroupItem>
+                </CardText>
+                <CardText>
                 ${currentArtPiece.price}
-            </ListGroupItem>
-        </ListGroup>     
+                </CardText>
+            </CardBody>  
         </Card>
     )
 

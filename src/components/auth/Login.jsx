@@ -38,9 +38,7 @@ export const Login = () => {
             onSubmit={handleLogin}
         >
           <h1>Art Gallery</h1>
-          <h2>Please sign in</h2>
           <FormGroup>
-            <div className="form-group">
               <input
                 type="email"
                 value={email}
@@ -50,19 +48,17 @@ export const Login = () => {
                 required
                 autoFocus
               />
-            </div>
           </FormGroup>
           <FormGroup>
-            <div className="form-group">
-              <button className="login-btn btn-info" type="submit">
+              <Button className="login-btn btn-info" type="submit">
                 Sign in
-              </button>
-            </div>
+              </Button>
           </FormGroup>
         </Form>      
         <Link to="/register"
         >
           Not a Member Yet?
-          </Link>    </Container>
+        </Link>    
+      </Container>
   )
 }
