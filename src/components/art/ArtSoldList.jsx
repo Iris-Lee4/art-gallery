@@ -19,7 +19,7 @@ export const ArtSoldList = ({ artPiece }) => {
     return (
         <Container>
             <article>
-                <h5>Sold Pieces</h5>
+                <h2>Sold Pieces</h2>
                 {soldArtPieces.map(artPiece => {
                     return <ArtPiece 
                             artPiece={artPiece}

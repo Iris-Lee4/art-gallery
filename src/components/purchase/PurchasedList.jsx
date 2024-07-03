@@ -21,7 +21,7 @@ export const PurchasedList = ({ currentUser }) => {
     return (
         <Container>
                 <Row>
-                <h5>Purchased Pieces</h5>
+                <h2>Purchased Pieces</h2>
                 {userPurchasedPieces.map(purchasedArtPiece => {
                     return <ArtPiece
                             artPiece={purchasedArtPiece}

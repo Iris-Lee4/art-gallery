@@ -16,9 +16,9 @@ export const UserDetails = ({ currentUser }) => {
     return (
         <Container>
             <ListGroup>
-                <ListGroupItemHeading>
+                <h2>
                     My Profile
-                </ListGroupItemHeading>
+                </h2>
                 <ListGroupItem> 
                     Name: {user.firstName} {user.lastName}
                 </ListGroupItem>

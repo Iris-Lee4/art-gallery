@@ -62,7 +62,7 @@ export const ArtDetail = ( { currentUser }) => {
     const handleDelete = () => {
         deleteArtPiece(currentArtPiece.id)
             .then(() => {
-            navigate("/")
+            navigate("/all")
             })
     }
 
@@ -193,7 +193,6 @@ export const ArtDetail = ( { currentUser }) => {
                                 e.preventDefault
                                 navigate(`/all/edit/${currentArtPiece.id}`)
                             }}
-                            color="dark"
                         >
                             Edit
                         </Button>                       

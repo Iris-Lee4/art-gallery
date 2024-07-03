@@ -55,6 +55,27 @@
       "lastName": "Kamp",
       "isStaff": false,
       "id": 8
+    },
+    {
+      "email": "il@lee.com",
+      "firstName": "iris",
+      "lastName": "lee",
+      "isStaff": true,
+      "id": 9
+    },
+    {
+      "email": "ojl@ojl.com",
+      "firstName": "oliver",
+      "lastName": "james",
+      "isStaff": false,
+      "id": 10
+    },
+    {
+      "email": "seth@fields.com",
+      "firstName": "Seth",
+      "lastName": "Fields",
+      "isStaff": true,
+      "id": 11
     }
   ],
   "pieces": [
@@ -107,8 +128,8 @@
       "blurb": "In Mitchell's 'Ladybug,' vibrant brushstrokes of marigold, mauve, dark berry, and brown appear spontaneously arranged yet meticulously planned. Colors overlap and merge atop layers of white paint, creating a dynamic chromatic web against an illusion of empty space. Despite the seeming spontaneity, Mitchell's process was deliberate and controlled, emphasizing the relationships between each brushstroke and the balance between figure and ground. Unlike many Abstract Expressionists, she eschewed a fully allover composition, aiming instead to capture the essence of 'feelings' and memories through her paint. Painted in 1957 when Mitchell was thirty-two and living in New York, 'Ladybug' reflects her commitment to conveying personal experiences rather than depicting nature directly.",
       "price": 2200,
       "url": "https://www.moma.org/media/W1siZiIsIjQ2MjU5MCJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDc2OHg3NjhcdTAwM2UiXV0.jpg?sha=9f7435c51c55834e",
-      "userId": 1,
-      "dateSold": ""
+      "userId": 10,
+      "dateSold": "2024-07-03T17:05:44.445Z"
     },
     {
       "id": 6,
@@ -170,10 +191,8 @@
       "dimensions": "105.4 x 132.1 cm",
       "dateCompleted": "1959",
       "blurb": "Drawn by the social freedoms of the postwar American art scene, Kusama left Japan and moved to New York in 1958. There, she began creating her Infinity Nets series, including No. F., exploring themes of infinite repetition and space. By combining serial repetition with an allover painting technique, Kusama blurred the line between figure and ground, giving equal importance to both the interlocking brushstrokes and the spaces between them. The process of creating these paintings served as a form of catharsis for her. She explained, 'Forget yourself. Become one with eternity. Become part of your environment.'",
-      "price": 2200,
-      "url": "https://www.moma.org/media/W1siZiIsIjE1MTQzNiJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDc2OHg3NjhcdTAwM2UiXV0.jpg?sha=0581b36e4095590e",
-      "userId": 1,
-      "dateSold": ""
+      "price": "2210",
+      "url": "https://www.moma.org/media/W1siZiIsIjE1MTQzNiJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDc2OHg3NjhcdTAwM2UiXV0.jpg?sha=0581b36e4095590e"
     },
     {
       "id": 12,
@@ -224,17 +243,15 @@
       "url": "https://www.moma.org/media/W1siZiIsIjI0MzI2OCJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDc2OHg3NjhcdTAwM2UiXV0.jpg?sha=e587e0a8c048bb32"
     },
     {
+      "id": 17,
       "name": "Magnetic Fields",
       "artist": "Mildred Thompson",
       "medium": "oil on canvas",
       "dimensions": "70.5 x 150\"",
       "dateCompleted": "1990",
       "blurb": "Mildred Thompson (1936-2003) was an American artist whose four-decade career spanned multiple fine arts genres. She also made significant contributions to creative writing, journalism, filmmaking, music, and digital media, and was a dedicated educator. In the early 1970s, Thompson deliberately abandoned representational imagery to champion abstraction. Her work transcended art world trends and the narratives dictated by her generation, race, and gender. She embraced freedom of exploration, defying norms and resisting categorization. Thompson developed a personal visual language inspired by scientific and musical theories and systems. She aimed to interpret and visualize elements and experiences invisible to the naked eye, with a special focus on time, space, and sound.",
-      "price": 5500,
-      "url": "https://mildredthompson.org/FOR%20WEBSITE/1990s_web_600px/paintings/MT%20Magnetic%20Fields.jpg",
-      "userId": 1,
-      "dateSold": "",
-      "id": 17
+      "price": "100000",
+      "url": "https://mildredthompson.org/FOR%20WEBSITE/1990s_web_600px/paintings/MT%20Magnetic%20Fields.jpg"
     },
     {
       "name": "Music of the Spheres: Mercury",
@@ -263,6 +280,7 @@
       "id": 19
     },
     {
+      "id": 20,
       "name": "Po Tolo (Dark Companion) from the Star Series",
       "artist": "Toshiko Takaezu",
       "medium": "glzed stoneware",
@@ -271,9 +289,8 @@
       "blurb": "Born in Hawaii to Okinawan parents, Toshiko Takaezu was a masterful artist known for her ceramic sculptures, treating them as abstract paintings in the round. Her gestural style, distinctive palettes, and complex glazes align with Abstract Expressionists. Takaezu introduced an element of chance, as final colors emerged only after firing. She often exhibited her ceramics in groups, alongside her innovative paintings and textiles, in arrangements responding to their environments. This exhibition traces her development from potter to multimedia installation artist.",
       "price": 6590,
       "url": "https://images.squarespace-cdn.com/content/v1/5c40c21ef8370ad59ce093a4/1564715736991-FMSFZNUGRU3NK0QT68XG/5EDIT.jpg?format=2500w",
-      "userId": 1,
-      "dateSold": "",
-      "id": 20
+      "userId": 3,
+      "dateSold": "2024-07-03T18:59:07.363Z"
     },
     {
       "name": "NY Battle Ground",
@@ -389,17 +406,30 @@
       "id": 29
     },
     {
-      "name": "Carousel Change",
+      "name": "Swing",
       "artist": "Sam Gilliam",
-      "medium": "acrylic paint on canvas and leather",
-      "dimensions": "356 x 720 cm",
-      "dateCompleted": "1970",
+      "medium": "acrylic and aluminum on canvas",
+      "dimensions": "303.8 x 720.1 cm",
+      "dateCompleted": "1969",
       "blurb": "Since the early 1960s, Gilliam has created richly colored abstract compositions using watercolors, transforming color and form into a physical, textural presence that extends beyond the two-dimensional surface. His techniques—staining, folding, and distressing the paper—have profoundly influenced his artistic practice. Initially expanding on the Washington Color School's staining technique, Gilliam's recent works integrate color and support, creating depth and rhythm through vertical washes that evoke folds and pleats, reminiscent of his draped canvases. His process reflects the improvisatory nature of jazz, where chance and choice play significant roles.",
-      "price": 9800,
-      "url": "https://media.tate.org.uk/art/images/work/L/L04/L04357_9.jpg",
+      "price": "5555",
+      "url": "https://ids.si.edu/ids/deliveryService?id=SAAM-1973.189_10&max=2600",
       "userId": 1,
       "dateSold": "",
-      "id": 30
+      "id": 31
+    },
+    {
+      "name": "Swing",
+      "artist": "Sam Gilliam",
+      "medium": "acrylic and aluminum on canva",
+      "dimensions": "303.8 x 720.1 cm",
+      "dateCompleted": "1969",
+      "blurb": "Since the early 1960s, Gilliam has created richly colored abstract compositions using watercolors, transforming color and form into a physical, textural presence that extends beyond the two-dimensional surface. His techniques—staining, folding, and distressing the paper—have profoundly influenced his artistic practice. Initially expanding on the Washington Color School's staining technique, Gilliam's recent works integrate color and support, creating depth and rhythm through vertical washes that evoke folds and pleats, reminiscent of his draped canvases. His process reflects the improvisatory nature of jazz, where chance and choice play significant roles.",
+      "price": "9855",
+      "url": "https://ids.si.edu/ids/deliveryService?id=SAAM-1973.189_10&max=2600",
+      "userId": 1,
+      "dateSold": "",
+      "id": 32
     }
   ],
   "comments": [
@@ -451,6 +481,27 @@
       "comment": "best thing ever",
       "timeStamp": "2024-07-02T19:20:19.847Z",
       "id": 8
+    },
+    {
+      "userId": 9,
+      "pieceId": 11,
+      "comment": "How many spots?",
+      "timeStamp": "2024-07-03T17:03:47.741Z",
+      "id": 9
+    },
+    {
+      "userId": 11,
+      "pieceId": 17,
+      "comment": "love this so much!",
+      "timeStamp": "2024-07-03T18:57:25.967Z",
+      "id": 10
+    },
+    {
+      "userId": 3,
+      "pieceId": 7,
+      "comment": "same!",
+      "timeStamp": "2024-07-03T18:58:52.525Z",
+      "id": 11
     }
   ],
   "likedPieces": [
@@ -507,6 +558,12 @@
       "pieceId": 10,
       "liked": true,
       "id": 12
+    },
+    {
+      "userId": 10,
+      "pieceId": 5,
+      "liked": true,
+      "id": 13
     }
   ]
 }

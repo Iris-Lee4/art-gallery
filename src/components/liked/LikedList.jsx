@@ -19,7 +19,7 @@ export const LikedList = ({ currentUser }) => {
 
     return (
         <Container>
-                <h5>Liked Pieces</h5>
+                <h2>Liked Pieces</h2>
                 <Row>
                 {userLikedPieces.map(likedArtPiece => {
                     return <ArtPiece

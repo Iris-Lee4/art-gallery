@@ -32,7 +32,8 @@ export const Login = () => {
   }
 
   return (
-    <Container className="container-login">
+    <Container className="container-login"
+      >
         <Form 
             className="form-login"
             onSubmit={handleLogin}
@@ -50,12 +51,17 @@ export const Login = () => {
               />
           </FormGroup>
           <FormGroup>
-              <Button className="login-btn btn-info" type="submit">
+              <Button className="login-btn btn-info" 
+                  type="submit"
+                  color="dark"
+                  block
+              >
                 Sign in
               </Button>
           </FormGroup>
         </Form>      
         <Link to="/register"
+        href="#"
         >
           Not a Member Yet?
         </Link>    

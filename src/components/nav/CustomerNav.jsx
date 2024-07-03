@@ -20,7 +20,6 @@ export const CustomerNav = (args) => {
       <Navbar {...args}
         container='fluid'
         expand={true}
-        fixed='top'
         color='dark'
         dark
       >

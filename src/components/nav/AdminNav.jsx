@@ -18,17 +18,15 @@ export const AdminNav = (args) => {
   return (
     <div>
       <Navbar {...args}
-        container='fluid'
         expand={true}
-        // fixed='top'
-        sticky
         color='dark'
         dark
       >
         <NavbarBrand href="/">Art Gallery</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="me-auto" navbar>
+          <Nav className="me-auto" 
+            navbar>
             <NavItem>
               <NavLink href="/all">
               All Artwork
@@ -49,7 +47,9 @@ export const AdminNav = (args) => {
                 My Profile
               </NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem
+              className='nav-logout-container'
+            >
               <NavLink href="/"
                 onClick={() => {
                     localStorage.removeItem("activeUser")
