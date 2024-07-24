@@ -3,14 +3,22 @@
 ## Walkthrough
 
 ### Login/Register
+![login](src/images/Login.png)
+
+### Dashboard
+![dashboard](src/images/Dashboard.png)
 
 ### All Pieces
+![all](src/images/All.png)
 
 ### Piece Details
+![details](src/images/Details.png)
 
 ### Edit Details
+![edit](src/images/Edit.png)
 
 ### My Profile
+![profile](src/images/Profile.png)
 
 ## Install
 
