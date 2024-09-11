@@ -32,12 +32,9 @@ export const ArtList = ({ currentUser }) => {
     },[])
 
     return (
-        <Container
-            // fluid={true}
-        >
-                       <h5>All Pieces</h5>
+        <Container>
+            <h5>All Artwork</h5>
                 <Row
-                    // fluid={true}
                     xs="2"
                 >
 

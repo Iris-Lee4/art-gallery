@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react"
 import { getAllArtPieces } from "../../services/artService.jsx"
 import { Container } from "react-bootstrap"
-import { ArtPiece } from "./ArtPiece.jsx"
+import { ArtPiece } from "../art/ArtPiece.jsx"
+import { Row } from "reactstrap"
 
 export const ArtSoldList = ({ artPiece }) => {
 
@@ -18,7 +19,7 @@ export const ArtSoldList = ({ artPiece }) => {
 
     return (
         <Container>
-            <article>
+            <Row>
                 <h5>Sold Pieces</h5>
                 {soldArtPieces.map(artPiece => {
                     return <ArtPiece 
@@ -26,7 +27,7 @@ export const ArtSoldList = ({ artPiece }) => {
                             key={artPiece.id}
                         /> 
                 })}
-            </article>
+            </Row>
     </Container>
     )
 }

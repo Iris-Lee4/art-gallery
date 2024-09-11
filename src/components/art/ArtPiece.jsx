@@ -1,6 +1,6 @@
 
 import { useNavigate } from "react-router-dom"
-import { Card } from "reactstrap"
+import { Card, CardImg } from "reactstrap"
 
 export const ArtPiece = ({ artPiece }) => {
 
@@ -10,19 +10,18 @@ export const ArtPiece = ({ artPiece }) => {
         <Card
             key={artPiece.id}
             style={{
-                width: '30%',
-                height: '30%'
+                width: '50%',
+                height: '50%'
                     }}
             color="light"
             outline={false}
             className="border-0"
             
          >
-                <img
+                <CardImg
                     alt="Card"
                     src={artPiece.url}
-                    width="100%"
-                    id="Popover1"
+                    width="50%"
                     onClick={() => {
                         navigate(`/all/${artPiece.id}`)
                     }}

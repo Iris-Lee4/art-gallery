@@ -1,8 +1,7 @@
 import { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
-import { Register } from "./Register.jsx"
 import { getUserByEmail } from "../../services/userService.jsx"
-import { Button, Container, Form, FormGroup } from "reactstrap"
+import { Button, Container, Form, FormGroup, Input } from "reactstrap"
 
 export const Login = () => {
   const [email, set] = useState("")
@@ -35,13 +34,12 @@ export const Login = () => {
     <Container className="container-login">
         <Form 
             className="form-login"
-            onSubmit={handleLogin}
+            onSubmit={handleLogin}        
         >
           <h1>Art Gallery</h1>
           <h2>Please sign in</h2>
           <FormGroup>
-            <div className="form-group">
-              <input
+              <Input
                 type="email"
                 value={email}
                 onChange={(evt) => set(evt.target.value)}
@@ -50,19 +48,17 @@ export const Login = () => {
                 required
                 autoFocus
               />
-            </div>
           </FormGroup>
           <FormGroup>
-            <div className="form-group">
-              <button className="login-btn btn-info" type="submit">
+              <Button className="login-btn btn-info" type="submit">
                 Sign in
-              </button>
-            </div>
+              </Button>
           </FormGroup>
         </Form>      
         <Link to="/register"
         >
           Not a Member Yet?
-          </Link>    </Container>
+          </Link>    
+      </Container>
   )
 }
