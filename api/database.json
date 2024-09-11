@@ -397,20 +397,6 @@
       "id": 1
     },
     {
-      "userId": 3,
-      "pieceId": 2,
-      "comment": "hello",
-      "timeStamp": "2024-06-26T18:59:15.076Z",
-      "id": 2
-    },
-    {
-      "userId": 3,
-      "pieceId": 1,
-      "comment": "hihi hi",
-      "timeStamp": "2024-06-27T14:34:41.494Z",
-      "id": 3
-    },
-    {
       "userId": 5,
       "pieceId": 20,
       "comment": "beautiful",
@@ -430,6 +416,20 @@
       "comment": "hahah",
       "timeStamp": "2024-06-28T14:36:12.398Z",
       "id": 6
+    },
+    {
+      "userId": 3,
+      "pieceId": 15,
+      "comment": "Creative use of material!",
+      "timeStamp": "2024-08-15T19:42:29.777Z",
+      "id": 7
+    },
+    {
+      "userId": 2,
+      "pieceId": 23,
+      "comment": "excellent form",
+      "timeStamp": "2024-09-11T17:49:12.985Z",
+      "id": 8
     }
   ],
   "likedPieces": [
@@ -474,6 +474,12 @@
       "pieceId": 6,
       "liked": true,
       "id": 9
+    },
+    {
+      "userId": 3,
+      "pieceId": 15,
+      "liked": true,
+      "id": 10
     }
   ]
 }

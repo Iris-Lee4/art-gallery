@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { createUser, getUserByEmail } from "../../services/userService.jsx"
+import { Button, Form, FormGroup, Input, Label, Container } from "reactstrap"
 
 export const Register = (props) => {
   const [customer, setCustomer] = useState({
@@ -47,12 +48,11 @@ export const Register = (props) => {
   }
 
   return (
-    <main style={{ textAlign: "center" }}>
-      <form className="form-login" onSubmit={handleRegister}>
-        <h3>Please Register</h3>
-        <fieldset>
-          <div className="form-group">
-            <input
+    <Container style={{ textAlign: "center" }}>
+      <Form className="form-login" onSubmit={handleRegister}>
+        <h3>Please fill out the form below to register with Art Gallery</h3>
+        <FormGroup>
+            <Input
               onChange={updateCustomer}
               type="text"
               id="firstName"
@@ -61,11 +61,9 @@ export const Register = (props) => {
               required
               autoFocus
             />
-          </div>
-        </fieldset>
-        <fieldset>
-          <div className="form-group">
-            <input
+        </FormGroup>
+        <FormGroup>
+            <Input
               onChange={updateCustomer}
               type="text"
               id="lastName"
@@ -74,11 +72,9 @@ export const Register = (props) => {
               required
               autoFocus
             />
-          </div>
-        </fieldset>
-        <fieldset>
-          <div className="form-group">
-            <input
+        </FormGroup>
+        <FormGroup>
+            <Input
               onChange={updateCustomer}
               type="email"
               id="email"
@@ -86,12 +82,10 @@ export const Register = (props) => {
               placeholder="Email address"
               required
             />
-          </div>
-        </fieldset>
-        <fieldset>
-          <div className="form-group">
-            <label>
-              <input
+        </FormGroup>
+        <FormGroup>
+            <Label>
+              <Input
                 onChange={(evt) => {
                   const copy = { ...customer }
                   copy.isStaff = evt.target.checked
@@ -101,17 +95,14 @@ export const Register = (props) => {
                 id="isStaff"
               />
               I am an employee{" "}
-            </label>
-          </div>
-        </fieldset>
-        <fieldset>
-          <div className="form-group">
-            <button className="login-btn btn-info" type="submit">
+            </Label>
+        </FormGroup>
+        <FormGroup>
+            <Button className="login-btn btn-info" type="submit">
               Register
-            </button>
-          </div>
-        </fieldset>
-      </form>
-    </main>
+            </Button>
+        </FormGroup>
+      </Form>
+    </Container>
   )
 }
