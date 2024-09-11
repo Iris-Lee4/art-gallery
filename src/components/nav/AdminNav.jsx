@@ -20,8 +20,6 @@ export const AdminNav = (args) => {
       <Navbar {...args}
         container='fluid'
         expand={true}
-        // fixed='top'
-        sticky
         color='dark'
         dark
       >
