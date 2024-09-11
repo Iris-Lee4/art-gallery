@@ -1,15 +1,12 @@
 
 import { ListGroup } from "react-bootstrap"
-import { Card, CardBody, CardSubtitle, CardTitle, ListGroupItem } from "reactstrap"
+import { Card, CardBody, CardImg, CardSubtitle, CardTitle, ListGroupItem } from "reactstrap"
 
 export const ArtPieceDetails = ({ currentArtPiece }) => {
 
     return (
         <Card
         key={currentArtPiece.id}
-        style={{
-            width: '18rem'
-                }}
      >
         <CardBody>
             <CardTitle tag="h5">
@@ -22,7 +19,7 @@ export const ArtPieceDetails = ({ currentArtPiece }) => {
                 {currentArtPiece.artist}
             </CardSubtitle>
             </CardBody>
-            <img
+            <CardImg
                 alt="Card cap"
                 src={currentArtPiece.url}
                 width="100%"
